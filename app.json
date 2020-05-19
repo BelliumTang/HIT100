@@ -11,6 +11,29 @@
     "navigationBarTitleText": "百年工大校庆",
     "navigationBarTextStyle":"black"
   },
+
+  "tabBar":{
+    "color":"#B6B6B6",
+    "selectedColor":"#FE9132",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"images/home.png",
+        "selectedIconPath":"images/home-h.png"
+      },{
+        "pagePath":"pages/index/index",
+        "text":"用户",
+        "iconPath":"images/user.png",
+        "selectedIconPath":"images/user-h.png"
+      },{
+        "pagePath":"pages/index/index",
+        "text":"XX",
+        "iconPath":"images/list.png",
+        "selectedIconPath":"images/list-h.png"
+      }
+    ]
+  },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

@@ -1,4 +1,9 @@
 /**index.wxss**/
-.banner{ width:100%; height: 295rpx; }
+.banner{ width:100%; height: 300rpx; }
 .banner swiper{ height: 100%; width:100%;}
-.banner image{ width: 100%; height: 295rpx;}
+.banner image{ width: 100%; height: 300rpx;}
+
+.major{ white-space: nowrap; padding:30rpx 0;}
+.major .box{ text-align: center; width:250rpx; display: inline-block; }
+.major .pic{width:130rpx; height: 120rpx;}
+.major .txt{ font-size:26rpx; margin-top:8rpx;} 

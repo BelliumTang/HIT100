@@ -6,3 +6,46 @@
     <swiper-item><image src="/images/h3.png"/></swiper-item>
   </swiper>
 </view>
+
+<view class="major" >   
+      <navigator  class="box" url="">
+        <image class="pic" src="/images/HIT.jpg"/>
+        <view class="txt">官方消息</view>
+      </navigator>
+      <navigator class="box" url="">
+        <image class="pic" src="/images/flag.png"/>
+        <view class="txt">工大应援</view>
+      </navigator>
+      <navigator class="box" url="">
+        <image class="pic" src="/images/100.png"/>
+        <view class="txt">校庆活动</view>
+      </navigator>  
+</view>
+<view class="major" >   
+      <navigator  class="box" url="">
+        <image class="pic" src="/images/peer.png"/>
+        <view class="txt">寻找校友</view>
+      </navigator>
+      <navigator class="box" url="">
+        <image class="pic" src="/images/movie.png"/>
+        <view class="txt">工大回忆</view>
+      </navigator>
+      <navigator class="box" url="">
+        <image class="pic" src="/images/love.png"/>
+        <view class="txt">留言祝福</view>
+      </navigator>  
+</view>
+<view class="major" >   
+      <navigator  class="box" url="">
+        <image class="pic" src="/images/jz.png"/>
+        <view class="txt">校友捐款</view>
+      </navigator>
+      <navigator class="box" url="">
+        <image class="pic" src="/images/e.png"/>
+        <view class="txt">XXX</view>
+      </navigator>
+      <navigator class="box" url="">
+        <image class="pic" src="/images/i.png"/>
+        <view class="txt">XXX</view>
+      </navigator>  
+</view>
