@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="banner">
+  <swiper indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" circular autoplay interval="4000">
+    <swiper-item><image src="/images/h1.png"/></swiper-item>
+    <swiper-item><image src="/images/h2.png"/></swiper-item>
+    <swiper-item><image src="/images/h3.png"/></swiper-item>
+  </swiper>
+</view>
