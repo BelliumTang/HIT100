@@ -1,0 +1,88 @@
+
+<view class="cu-timeline">
+        <view class="cu-time">2020.06.07</view>
+        <view class="cu-item cur cuIcon-noticefill">
+          <view class="content bg-green shadow-blur">
+            <text>06:07</text> 哈工大百年校庆
+          </view>
+        </view>
+        <view class="cu-item text-red cuIcon-attentionforbidfill">
+          <view class="content bg-red shadow-blur">
+            界面目前处于测试状态
+          </view>
+        </view>
+        <view class="cu-item text-grey cuIcon-evaluate_fill">
+          <view class="content bg-grey shadow-blur">
+            2333
+          </view>
+        </view>
+        <view class="cu-item text-blue">
+          <view class="bg-blue content">
+            <text>20:00</text> 【月球】快件已到达月球，准备发往地球
+          </view>
+          <view class="bg-cyan content">
+            <text>10:00</text> 【银河系】快件已到达银河系，准备发往月球
+          </view>
+  </view>
+</view>
+
+<view class="cu-timeline">
+  <view class="cu-time">2020.05.27</view>
+  <view class="cu-item">
+    <view class="content">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-cyan">凌晨</view>
+        <view class="cu-tag line-cyan">01:30</view>
+      </view>
+      <view class="margin-top">大三真好玩！ddl可多了！</view>
+    </view>
+  </view>
+</view>
+
+<view class="cu-timeline">
+  <view class="cu-time">2020.5.17</view>
+  <view class="cu-item">
+    <view class="content">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-cyan">凌晨</view>
+        <view class="cu-tag line-cyan">02:30</view>
+      </view>
+      <view class="margin-top">需要这种精神！</view>
+    </view>
+  </view>
+  <view class="cu-item text-blue">
+    <view class="bg-blue shadow-blur content">
+      <view class="cu-list menu-avatar radius">
+        <view class="cu-item">
+          <view class="cu-avatar round lg" style="background-image:url(https://pic.downk.cc/item/5ece721ec2a9a83be5ecc7f1.png);"></view>
+          <view class="content">
+            <view class="text-pink">汤帅</view>
+            <view class="text-gray text-sm">
+              <text class="cuIcon-infofill text-red"></text> 消息未送达</view>
+          </view>
+          <view class="action">
+            <view class="text-grey text-xs">23:33</view>
+            <view class="cu-tag round bg-grey sm">666</view>
+          </view>
+        </view>
+        <view class="cu-item">
+          <view class="cu-avatar round lg" style="background-image:url(https://pic.downk.cc/item/5ece721dc2a9a83be5ecc638.jpg);">
+            <view class="cu-tag badge">99+</view>
+          </view>
+          <view class="content">
+            <view class="text-blue">狗焕
+              <view class="cu-tag round orange sm">SVIP</view>
+            </view>
+            <view class="text-gray text-sm">
+              <text class="text"></text>请回答，1988</view>
+          </view>
+          <view class="action">
+            <view class="text-grey text-xs">22:23</view>
+            <text class="cuIcon-notice_forbid_fill text-gray"></text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,99 @@
+<!--pages/news/news.wxml-->
+<!--index.wxml-->
+
+<view class=" news-list">
+  <block>
+    <navigator class="box" url="/pages/index/index">
+        <view class="news-item" bindtap="bindViewTap">
+            <image src="http://zsb.hitsz.edu.cn/image/20190918/1568793166380067299.jpg" mode="aspectFill" class="list-image"/>
+              <view class="news-text">
+                <text class="news-title" space="emsp">【致敬百年】深圳校区全景VR|夏意盎然</text>
+                <view class="news-stamp">
+                <text space="emsp">官方发布         2020.05.23</text>
+              </view>
+            </view>
+        </view>
+      </navigator>
+  </block>
+</view>
+
+<view class=" news-list">
+  <block>
+      <navigator class="box" url="/pages/index/index">
+          <view class="news-item" bindtap="bindViewTap">
+            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=568757187,4055930603&fm=26&gp=0.jpg" mode="aspectFill" class="list-image2"/>
+                  <view class="news-text">
+                      <text class="news-title">【规格严格】新地标！校训石在\n深圳校区落成揭幕</text>
+                      <view class="news-stamp">
+                      <text space="emsp">官方发布        2020.05.23</text>
+                      </view>
+                  </view>
+          </view>
+        </navigator>
+  </block>
+</view>
+
+<view class=" news-list">
+ <block>
+  <navigator class="box" url="/pages/notice/news1/news1">
+      <view class="news-item" bindtap="bindViewTap">
+        <image src="https://pic.downk.cc/item/5ecb8ad4c2a9a83be56a800d.jpg" mode="aspectFill" class="list-image"/>
+          <view class="news-text">
+              <text class="news-title">【百年牌面】《自然》杂志特刊推介百年哈工大</text>
+              <view class="news-stamp">
+              <text space="emsp">官方报道          2020.05.21</text>
+              </view>
+          </view>
+      </view>
+  </navigator>
+ </block>
+</view>
+
+<view class=" news-list">
+ <block>
+      <navigator class="box" url="/pages/notice/news2/news2">
+            <view class="news-item" bindtap="bindViewTap">
+                <image src="http://100.hit.edu.cn/xqDisk/image/20200521/1590020547069023551.png" mode="aspectFill" class="list-image2"/>
+                <view class="news-text">
+                <text class="news-title">【规格严格】纪念建校100周年\n海内外校友通报会直播预告</text>
+                <view class="news-stamp">
+                <text space="emsp">官方公告        2020.05.09</text>
+                </view>
+                </view>
+            </view>
+        </navigator>
+ </block>
+</view>
+<view class=" news-list">
+ <block>
+  <navigator class="box" url="/pages/light/light">
+      <view class="news-item" bindtap="bindViewTap">
+        <image src="https://pic.downk.cc/item/5ecb8d6ac2a9a83be56e2d60.jpg" mode="aspectFill" class="list-image2"/>
+             <view class="news-text">
+                 <text class="news-title">【功夫到家】哈尔滨工业大学\n100周年校庆公告 （第二号）</text>
+            <view class="news-stamp">
+                <text space="emsp">官方公告        2020.05.08</text>
+            </view>
+             </view>
+      </view>
+  </navigator>
+ </block>
+</view>
+
+<view class=" news-list">
+ <block>
+ <navigator class="box" url="/pages/index/index">
+ <view class="news-item" bindtap="bindViewTap">
+  <image src="https://pic.downk.cc/item/5ecb917fc2a9a83be57372aa.jpg" mode="aspectFill" class="list-image"/>
+  <view class="news-text">
+  <text class="news-title">【百年工大】哈尔滨工业大学100周年校史回眸</text>
+  <view class="news-stamp">
+   <text space="emsp">校史回眸          1920-2020</text>
+  </view>
+  </view>
+ </view>
+  </navigator>
+ </block>
+</view>
+
+   

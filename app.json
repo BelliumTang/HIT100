@@ -1,6 +1,11 @@
 {
   "pages":[
-    "pages/index/index",
+    "pages/index/index", 
+    "pages/timeline/timeline",
+    "pages/light/light",
+    "pages/news/news",
+    "pages/user/user",
+    "pages/test/test",
     "pages/logs/logs",
     "pages/notice/news1/news1",
     "pages/notice/news2/news2"
@@ -22,12 +27,12 @@
         "iconPath":"images/home.png",
         "selectedIconPath":"images/home-h.png"
       },{
-        "pagePath":"pages/index/index",
+        "pagePath":"pages/user/user",
         "text":"用户",
         "iconPath":"images/user.png",
         "selectedIconPath":"images/user-h.png"
       },{
-        "pagePath":"pages/index/index",
+        "pagePath":"pages/test/test",
         "text":"XX",
         "iconPath":"images/list.png",
         "selectedIconPath":"images/list-h.png"
@@ -35,5 +40,8 @@
     ]
   },
   "style": "v2",
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  },
   "sitemapLocation": "sitemap.json"
 }

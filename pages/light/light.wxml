@@ -1,0 +1,23 @@
+<!--index.wxml-->
+
+<view class="container">
+ <text class="word1">哈尔滨工业大学百年校庆</text>
+  <ec-canvas id="mychart-dom-map" canvas-id="mychart-map" ec="{{ ecMap }}"></ec-canvas>
+  <text class="word2"> 我为哈工大百年校庆应援！</text>
+  	<view class="cu-form-group">
+      <view class="title">地址选择</view>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[0]}}，{{region[1]}}，{{region[2]}}
+        </view>
+      </picker>
+  	</view> 
+   <view class="button-sp-area">
+      <button type="primary">应援按钮</button>
+    </view>
+     
+</view>
+
+
+
+

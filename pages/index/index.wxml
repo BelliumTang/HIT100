@@ -7,12 +7,12 @@
   </swiper>
 </view>
 
-<view class="major" >   
-      <navigator  class="box" url="">
+<view class="major" color="#FFFFFF">   
+      <navigator  class="box" url="/pages/news/news">
         <image class="pic" src="/images/HIT.jpg"/>
         <view class="txt">官方消息</view>
       </navigator>
-      <navigator class="box" url="">
+      <navigator class="box" url="/pages/light/light">
         <image class="pic" src="/images/flag.png"/>
         <view class="txt">工大应援</view>
       </navigator>
@@ -26,7 +26,7 @@
         <image class="pic" src="/images/peer.png"/>
         <view class="txt">寻找校友</view>
       </navigator>
-      <navigator class="box" url="">
+      <navigator class="box" url="/pages/timeline/timeline">
         <image class="pic" src="/images/movie.png"/>
         <view class="txt">工大回忆</view>
       </navigator>
