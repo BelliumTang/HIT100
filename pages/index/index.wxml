@@ -4,6 +4,7 @@
     <swiper-item><image src="/images/h1.png"/></swiper-item>
     <swiper-item><image src="/images/h2.png"/></swiper-item>
     <swiper-item><image src="/images/h3.png"/></swiper-item>
+    <swiper-item><image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/h4.png?sign=e5b7009f7a591402f6d4769cbf6308f8&t=1590632011"/></swiper-item>
   </swiper>
 </view>
 

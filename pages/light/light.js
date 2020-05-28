@@ -181,6 +181,28 @@ function initChartMap(canvas, width, height) {
     ],
    
     series: [
+       {
+        type: 'map',
+        mapType: 'china',
+        geoIndex: 0,
+        roam: false, // 鼠标是否可以缩放
+        label: {
+          normal: {
+            show: false,
+          },
+          emphasis: {
+            show: true
+          }
+        },
+        itemStyle: {
+          normal: {
+              color: '#05C3F9',
+              fontSize: '8'
+          },
+        },
+        data:data
+      
+    },
       {
         name: '散点',
         type: 'scatter',
