@@ -19,6 +19,7 @@
 	"libVersion": "2.11.0",
 	"appid": "wxa6506cc79549d1e0",
 	"projectname": "HIT",
+	"cloudfunctionRoot": "cloudfunctions/",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
