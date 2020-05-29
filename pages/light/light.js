@@ -4,41 +4,8 @@ import geoJson from './mapData.js';
 
 const app = getApp();
 
-var data = [
-  {name:"北京",value:177},
-  {name:"天津",value:42},
-  {name:"河北",value:102},
-  {name:"山西",value:81},
-  {name:"内蒙古",value:47},
-  {name:"辽宁",value:67},
-  {name:"吉林",value:82},
-  {name:"黑龙江",value:166},
-  {name:"上海",value:24},
-  {name:"江苏",value:92},
-  {name:"浙江",value:114},
-  {name:"安徽",value:109},
-  {name:"福建",value:116},
-  {name:"江西",value:91},
-  {name:"山东",value:126},
-  {name:"河南",value:96},
-  {name:"湖北",value:116},
-  {name:"湖南",value:123},
-  {name:"重庆",value:91},
-  {name:"四川",value:125},
-  {name:"贵州",value:62},
-  {name:"云南",value:83},
-  {name:"西藏",value:9},
-  {name:"陕西",value:80},
-  {name:"甘肃",value:56},
-  {name:"青海",value:10},
-  {name:"宁夏",value:18},
-  {name:"新疆",value:67},
-  {name:"广东",value:125},
-  {name:"广西",value:59},
-  {name:"海南",value:14},
-  {name:"台湾",value:15},
-  {name:"香港",value:3},
-  {name:"澳门",value:4},
+var citydata = [
+ 
   ];
   
   var geoCoordMap = {
@@ -255,8 +222,7 @@ function initChartMap(canvas, width, height) {
               fontSize: '8'
           },
         },
-        data:data
-      
+        data:citydata
     },
    
     {
@@ -288,7 +254,7 @@ function initChartMap(canvas, width, height) {
           }
       },
       //zlevel: 6,
-      data: convertData(data.sort(function(a, b) {
+      data: convertData(citydata.sort(function(a, b) {
         return b.value - a.value;
     })),
   },
@@ -296,7 +262,7 @@ function initChartMap(canvas, width, height) {
       name: 'Top 5',
       type: 'effectScatter',
       coordinateSystem: 'geo',
-      data: convertData(data.sort(function(a, b) {
+      data: convertData(citydata.sort(function(a, b) {
           return b.value - a.value;
       }).slice(0, 5)),
       symbolSize: function(val) {
@@ -333,16 +299,20 @@ function initChartMap(canvas, width, height) {
   return myMap
 }
 
+const db = wx.cloud.database()
+const _ = db.command
 
 Page({
   onShareAppMessage: function (res) {
     return {
       title: '我为哈工大百年校庆应援！祝福工大生日快乐！',
       path: '/pages/light/light',
+      imageUrl: '/images/100.png',    
       success: function () { },
       fail: function () { }
     }
   },
+
   data: {
     ecMap: {
       onInit: initChartMap
@@ -352,20 +322,54 @@ Page({
     index: null,
     region: ['广东省', '深圳市', '南山区'],
     multiIndex: [0, 0, 0],
-    customItem: '全部'
+    customItem: '全部',
+    Cloudata:""
   },
+
+  lightHIT:function (){
+    db.collection("city")
+    .where({
+      name:_.eq(this.data.region[0])
+    })
+    .update({
+        data:{
+        value:_.inc(1)
+      }
+    })
+    .then(res=> {
+          // res.data 包含该记录的数据
+          console.log(res)
+    
+        })
+        //console.log(this.data.region[0])
+        // .where({
+        //   name:_.eq(this.data.region[0])
+        // })
+    // .get()
+    // .then(res=> {
+    //     // res.data 包含该记录的数据
+    //     console.log(res.data)
+    //     this.setData({
+    //       city:res.data
+    //   })
+    // })
+    // .get()
+    // .then(res=> {
+    //     // res.data 包含该记录的数据
+    //     console.log(res.data)
+    //     this.setData({
+    //       city:res.data
+    //   })
+    // })
+  },
+
   bindPickerChange: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       index: e.detail.value
     })
   },
-  bindMultiPickerChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
-    this.setData({
-      multiIndex: e.detail.value
-    })
-  },
+ 
   MultiColumnChange(e) {
     let data = {
       multiArray: this.data.multiArray,
@@ -389,24 +393,33 @@ Page({
     }
     this.setData(data);
   },
-  bindDateChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
-    this.setData({
-      date: e.detail.value
-    })
-  },
-  bindTimeChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
-    this.setData({
-      time: e.detail.value
-    })
-  },
+ 
   bindRegionChange: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       region: e.detail.value
     })
   },
+
+   /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    wx.cloud.callFunction({
+      name:"getCity"
+    })
+    .then(res=>{
+      console.log(res.result.data)
+           this.setData({
+            citydata:res.result.data
+      })
+    })
+   // cityData = Cloudata["name","value"]
+   
+  },
+
   onReady() {
   }
+  
+  
 });

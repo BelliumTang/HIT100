@@ -5,7 +5,9 @@
     <swiper-item><image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/h2.png?sign=3bcc82af2f5ecea6d782218bd19709ec&t=1590634225"/></swiper-item>
     <swiper-item><image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/h3.png?sign=ed54da8a81e41e57a61365be29cc3a91&t=1590634236"/></swiper-item>
     <swiper-item><image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/h4.png?sign=e5b7009f7a591402f6d4769cbf6308f8&t=1590632011"/></swiper-item>
- <swiper-item><image src=" https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/h5.png?sign=4211c0c2b8310e13710b0d9d3ebfa564&t=1590634098"/></swiper-item>
+    <swiper-item><image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/h5.png?sign=4211c0c2b8310e13710b0d9d3ebfa564&t=1590634098"/></swiper-item>
+    <swiper-item><image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/h6.jpg?sign=70c28a386cf1c79c64eeadab09080e05&t=1590718248"/></swiper-item>
+    <swiper-item><image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/h7.jpg?sign=bd85631dc505bc7296a87b2b18527128&t=1590738566"/></swiper-item>
   </swiper>
 </view>
 

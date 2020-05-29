@@ -1,7 +1,7 @@
 {
   "pages":[ 
-    "pages/light/light",
-    "pages/index/index", 
+     "pages/light/light",
+     "pages/index/index",
    
     "pages/timeline/timeline",
    

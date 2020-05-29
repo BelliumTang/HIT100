@@ -1,2 +1,6 @@
 <!--pages/user/user.wxml-->
 <text>尚未开发，敬请期待！</text>
+<text style='display:flex; justify-content:center; align-items:center;padding:100rpx'>小彩蛋</text>
+<view style='display:flex; justify-content:center; align-items:center'>
+<video src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E5%93%88%E6%B7%B1%E5%87%A4%E5%87%B02020.mp4?sign=999998e45feea827eb466aab9f141b69&t=1590717018" show-fullscreen-btn = ture></video>
+</view>
