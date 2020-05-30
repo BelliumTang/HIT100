@@ -41,6 +41,11 @@
       }
     ]
   },
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
+
   "style": "v2",
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom"
