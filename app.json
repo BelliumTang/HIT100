@@ -1,10 +1,8 @@
 {
   "pages":[ 
-     "pages/light/light",
-     "pages/index/index",
-   
+    "pages/index/index",
+    "pages/light/light",
     "pages/timeline/timeline",
-   
     "pages/news/news",
     "pages/user/user",
     "pages/test/test",

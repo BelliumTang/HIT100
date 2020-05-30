@@ -12,7 +12,7 @@
         </view>
       </picker>
   	</view> 
-   <view class="button-sp-area" >
+   <view class="button-sp-area">
       <button type="primary" bindtap="lightHIT">应援按钮</button>
        </view>
    <view class="button-sp-area" >

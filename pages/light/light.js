@@ -303,7 +303,8 @@ Page({
     multiIndex: [0, 0, 0],
     customItem: '全部',
     dialogShow: false,
-    buttons: [{text: '规格严格,功夫到家! :)'}],
+    //lightshow:true,
+    buttons: [{text: '规格严格,功夫到家!  :)'}],
   },
 
   tapDialogButton(e) {
@@ -348,9 +349,10 @@ Page({
         })
 
       this.setData({
-        dialogShow: true
+        dialogShow: true,
+        //lightshow:false
     })
-
+    
   },
 
   bindPickerChange: function (e) {
@@ -396,12 +398,12 @@ Page({
   onLoad: function (options) {
     this.echartsComponnet = this.selectComponent('#mychart-dom-map');
     this.getData(); //获取数据
-    db.collection("city")
-    .add({
-        data:{
-        name:'南海诸岛'
-      }
-    })
+    // db.collection("city")
+    // .add({
+    //     data:{
+    //     name:'南海诸岛'
+    //   }
+    // })
   },
 
   onReady() {
