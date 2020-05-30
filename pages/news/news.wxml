@@ -3,9 +3,9 @@
 
 <view class=" news-list">
   <block>
-    <navigator class="box" url="/pages/index/index">
+    <navigator class="box" url="/pages/notice/news1/news1">
         <view class="news-item" bindtap="bindViewTap">
-            <image src="http://zsb.hitsz.edu.cn/image/20190918/1568793166380067299.jpg" mode="aspectFill" class="list-image"/>
+            <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/new1.jpg?sign=fd603dee6fefdb9d55f8927e1111d774&t=1590830460" mode="aspectFill" class="list-image"/>
               <view class="news-text">
                 <text class="news-title" space="emsp">【致敬百年】深圳校区全景VR|夏意盎然</text>
                 <view class="news-stamp">
@@ -19,9 +19,9 @@
 
 <view class=" news-list">
   <block>
-      <navigator class="box" url="/pages/index/index">
+      <navigator class="box" url="/pages/notice/news1/news1">
           <view class="news-item" bindtap="bindViewTap">
-            <image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=568757187,4055930603&fm=26&gp=0.jpg" mode="aspectFill" class="list-image2"/>
+            <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/new2.jpg?sign=c576328a2f5e274f5fbf898959487033&t=1590830571" mode="aspectFill" class="list-image2"/>
                   <view class="news-text">
                       <text class="news-title">【规格严格】新地标！校训石在\n深圳校区落成揭幕</text>
                       <view class="news-stamp">
@@ -37,7 +37,7 @@
  <block>
   <navigator class="box" url="/pages/notice/news1/news1">
       <view class="news-item" bindtap="bindViewTap">
-        <image src="https://pic.downk.cc/item/5ecb8ad4c2a9a83be56a800d.jpg" mode="aspectFill" class="list-image"/>
+        <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/new3.jpg?sign=2ea6cee6686cdc517f14d8296187e5f0&t=1590830672" mode="aspectFill" class="list-image"/>
           <view class="news-text">
               <text class="news-title">【百年牌面】《自然》杂志特刊推介百年哈工大</text>
               <view class="news-stamp">
@@ -66,9 +66,9 @@
 </view>
 <view class=" news-list">
  <block>
-  <navigator class="box" url="/pages/light/light">
+  <navigator class="box" url="/pages/notice/news1/news1">
       <view class="news-item" bindtap="bindViewTap">
-        <image src="https://pic.downk.cc/item/5ecb8d6ac2a9a83be56e2d60.jpg" mode="aspectFill" class="list-image2"/>
+        <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/new5.jpg?sign=8ae7d41ca304a651f54b6293c95d6444&t=1590830746" mode="aspectFill" class="list-image2"/>
              <view class="news-text">
                  <text class="news-title">【功夫到家】哈尔滨工业大学\n100周年校庆公告 （第二号）</text>
             <view class="news-stamp">
@@ -82,17 +82,17 @@
 
 <view class=" news-list">
  <block>
- <navigator class="box" url="/pages/index/index">
- <view class="news-item" bindtap="bindViewTap">
-  <image src="https://pic.downk.cc/item/5ecb917fc2a9a83be57372aa.jpg" mode="aspectFill" class="list-image"/>
-  <view class="news-text">
-  <text class="news-title">【百年工大】哈尔滨工业大学100周年校史回眸</text>
-  <view class="news-stamp">
-   <text space="emsp">校史回眸          1920-2020</text>
-  </view>
-  </view>
- </view>
-  </navigator>
+  <navigator class="box" url="/pages/notice/news1/news1">
+      <view class="news-item" bindtap="bindViewTap">
+          <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/new6.jpg?sign=196d7a4598047c2d734b6855eef5545e&t=1590830770" mode="aspectFill" class="list-image"/>
+            <view class="news-text">
+              <text class="news-title">【百年工大】哈尔滨工业大学100周年校史回眸</text>
+              <view class="news-stamp">
+              <text space="emsp">校史回眸          1920-2020</text>
+            </view>
+          </view>
+      </view>
+    </navigator>
  </block>
 </view>
 

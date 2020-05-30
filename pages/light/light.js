@@ -40,10 +40,10 @@ var geoCoordMap = {
   '香港':[114.204522,22.263085],
   '澳门':[113.58206,22.14282],
 };
-var max = 480,
-    min = 9; // todo 
-var maxSize4Pin = 100,
-    minSize4Pin = 20;
+var max = 500,
+    min = 0; // todo 
+var maxSize4Pin = 500,
+    minSize4Pin = 0;
 
 var convertData = function(data) {
     var res = [];
@@ -138,7 +138,7 @@ var option = {
   visualMap: {
     show: true,
     min: 0,
-    max: 100,
+    max: 500,
     left: 'left',
     top: 'bottom',
     text: ['high'], // 文本，默认为数值文本
@@ -215,7 +215,7 @@ var option = {
         var a = (maxSize4Pin - minSize4Pin) / (max - min);
         var b = minSize4Pin - a * min;
         b = maxSize4Pin - a * max;
-        return (a * val[2] + b)/2;
+        return a * val[2] + b;
     },
     label: {
         normal: {
@@ -244,7 +244,7 @@ var option = {
     coordinateSystem: 'geo',
     //data: convertData(citydata.sort(function(a, b) {return b.value - a.value; }).slice(0, 5)),
     symbolSize: function(val) {
-        return val[2]/8;
+        return val[2]/6;
     },
     showEffectOn: 'render',
     rippleEffect: {
@@ -425,7 +425,7 @@ Page({
         delete citydata[i]._id;
         delete citydata[i]._openid;
      }
-      console.log(citydata)
+     // console.log(citydata)
   
      // option.yAxis[0].data = note;
       option.series[0].data =  convertData(citydata);
