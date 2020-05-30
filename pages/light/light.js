@@ -193,7 +193,7 @@ var option = {
           show: false,
         },
         emphasis: {
-          show: true
+          show: false
         }
       },
       itemStyle: {
@@ -255,9 +255,10 @@ var option = {
         normal: {
             formatter: '{b}',
             position: 'right',
-            show: true
+            show: false
         }
     },
+   
     endcode:{
       label:2
     },
@@ -284,7 +285,7 @@ Page({
     return {
       title: '我为哈工大百年校庆应援！祝福工大生日快乐！',
       path: '/pages/light/light',
-      imageUrl: '/images/100.png',    
+      imageUrl: 'https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/2020.png?sign=b90eef1d7eabe42c1e5a362110b6a77c&t=1590806475',    
       success: function () { },
       fail: function () { }
     }
@@ -327,7 +328,6 @@ Page({
 
   lightHIT:function (){
     var cityAll = ['广东省','湖南省','黑龙江省','山东省','吉林省','辽宁省','内蒙古自治区','天津市','陕西省','山西省','宁夏回族自治区','新疆维吾尔自治区','西藏自治区','青海省','河北省','河南省','安徽省','浙江省','江苏省','上海市','重庆市','江西省','贵州省','海南省','台湾省','云南省','香港特别行政区','澳门特别行政区']
-
     var cityEasy = ['广东','湖南','黑龙江','山东','吉林','辽宁','内蒙古','天津','陕西','山西','宁夏','新疆','西藏','青海','河北','河南','安徽','浙江','江苏','上海','重庆','江西','贵州','海南','台湾','云南','香港','澳门']
 
     var num = cityAll.indexOf(this.data.region[0])
