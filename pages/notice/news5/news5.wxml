@@ -1,0 +1,25 @@
+
+<view class="detail-container">
+  <image class="head-image" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news5.png?sign=40955760a08051b282327d3066bde0b6&t=1590891192"></image>
+ 
+  <text class="title">【致敬百年】哈尔滨工业大学100周年校庆公告 （第二号）</text>
+
+  <view class="author-date">
+   <text class="date">哈尔滨工业大学</text>
+      <text class="const-text">发表于</text>
+      <text class="date">2020-05-08 17:17:39</text>
+  </view>
+    <view class="horizon"></view>
+ 
+<view style='display:flex; justify-content:center; align-items:center;padding:10rpx'>
+<image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news5-1.png?sign=a7389c4641e161ff4f053dda979d9444&t=1590891247" show-menu-by-longpress='true' mode='scaleToFill' ></image>
+</view>
+<view style='display:flex; justify-content:center; align-items:center;padding:10rpx'>
+<image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news5-2.png?sign=aaab4e60dbb562cd723d6bd1523ae1c0&t=1590891257" show-menu-by-longpress='true' mode='scaleToFill' ></image>
+</view>
+
+  <view style='display:flex; justify-content:center; align-items:center;padding:10rpx'>
+<image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news2-1.jpg?sign=f92e095a71b7a85c1a264e2ecf51c762&t=1590888107" show-menu-by-longpress='true' mode='aspectFit' ></image>
+</view>
+
+</view>

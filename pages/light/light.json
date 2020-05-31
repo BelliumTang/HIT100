@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "ec-canvas": "../../ec-canvas/ec-canvas",
-    "mp-dialog": "/miniprogram_npm/weui-miniprogram/dialog/dialog"
+    "mp-dialog": "/miniprogram_npm/weui-miniprogram/dialog/dialog",
+    "van-button": "@vant/weapp/button/index"
   }
 }

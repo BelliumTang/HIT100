@@ -12,12 +12,12 @@
         </view>
       </picker>
   	</view> 
-   <view class="button-sp-area">
-      <button type="primary" bindtap="lightHIT">应援按钮</button>
-       </view>
-   <view class="button-sp-area" >
+
+   <view style="width:500rpx;display: flex;flex-direction: row; justify-content:space-between; padding:10rpx;">
+      <button type="primary" bindtap="lightHIT" >应援按钮</button>
       <button type="primary" plain="true" open-type="share">分享给朋友</button>
-   </view>
+    </view>
+
     <mp-dialog title="为哈工大百年校庆应援成功!" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
         <image style="width: 160px; height: 125px;"  src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/2020.png?sign=b90eef1d7eabe42c1e5a362110b6a77c&t=1590806475"></image>
     </mp-dialog>

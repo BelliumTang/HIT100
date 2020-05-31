@@ -14,6 +14,40 @@ Page({
     wx.navigateTo({
       url: '../logs/logs'
     })
+   
+  },
+  toBuy:function(){
+  wx.navigateToMiniProgram({
+        appId: 'wxd9a5d36c6f14d58d',
+        path: '',
+        extraData: {
+          foo: 'bar'
+        },
+        envVersion: 'release',
+        success(res) {
+          // 打开成功
+        },
+        fail(res){
+          // 打开失败
+        },
+        complete(res){
+          // 调用结束  不管成功还是失败都执行
+        }
+        /**
+         * appId：跳转到的小程序app-id
+         * path：打开的页面路径，如果为空则打开首页，path 中 ? 后面的部分会成为 query，在小程序的 App.onLaunch、App.onShow 和 Page.onLoad的回调函数中获取query数据
+         * extraData：需要传递给目标小程序的数据，目标小程序可在 App.onLaunch、App.onShow 中获取到这份数据
+         * envVersion：要打开的小程序版本，有效值: develop（开发版），trial（体验版），release（正式版），仅在当前小程序为开发版或体验版时此参数有效，如果当前小程序是正式版，则打开的小程序必定是正式版
+         */ 
+      })
+      wx.navigateBackMiniProgram({
+        extraData: {
+        foo: 'bar'
+      },
+      success(res) {
+        // 返回成功
+      }
+      })
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
@@ -51,4 +85,5 @@ Page({
       hasUserInfo: true
     })
   }
+ 
 })

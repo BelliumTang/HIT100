@@ -1,0 +1,25 @@
+
+<view class="detail-container">
+  <image class="head-image" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news7.jpg?sign=bbd40d1ab307313712d5ab514e330b89&t=1590856892"></image>
+ 
+  <text class="title">【致敬百年】哈工大校庆版官方网站上线试运营</text>
+
+  <view class="author-date">
+   <text class="date">本部</text>
+      <text class="const-text">发表于</text>
+      <text class="date">2020-05-30 14:42:10</text>
+  </view>
+    <view class="horizon"></view>
+ 
+  <text class="detail"  space="emsp">  在建校百年来临之际，哈工大新版官方网站于5月30日零点上线运行试运营。新版官网设计更加注重跨平台用户体验，更加注重视觉传达手段运用，更加注重展示师生重要成就和精神风貌，以进一步提升学校的整体品牌形象，向广大师生员工、海内外校友和关心学校发展的社会各界全面展示学校风采。试运营期间，欢迎各位师生提出完善建议，请将相关建议发送至web@hit.edu.cn \n</text>
+
+  <view style='display:flex; justify-content:center; align-items:center;padding:10rpx'>
+      <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news7-1.jpg?sign=60d0bf808a9f9c4d10a049941042ee42&t=1590857099" show-menu-by-longpress='true' mode='aspectFit' ></image>
+  </view>
+
+  <view style='display:flex; justify-content:center; align-items:center;padding:10rpx'>
+<image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news2-1.jpg?sign=f92e095a71b7a85c1a264e2ecf51c762&t=1590888107" show-menu-by-longpress='true' mode='aspectFit' ></image>
+</view>
+
+</view>
+

@@ -1,5 +1,20 @@
 <!--pages/news/news.wxml-->
 <!--index.wxml-->
+<view class=" news-list">
+  <block>
+      <navigator class="box" url="/pages/notice/news7/news7">
+          <view class="news-item" bindtap="bindViewTap">
+            <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/new7.jpg?sign=aa2e32d4e67376e3fa1dad25dceb9419&t=1590856251" mode="aspectFill" class="list-image2"/>
+                  <view class="news-text">
+                      <text class="news-title">【致敬百年】哈工大校庆版官方\n网站上线试运营</text>
+                      <view class="news-stamp">
+                      <text space="emsp">官方发布        2020.05.30</text>
+                      </view>
+                  </view>
+          </view>
+        </navigator>
+  </block>
+</view>
 
 <view class=" news-list">
   <block>
@@ -19,7 +34,7 @@
 
 <view class=" news-list">
   <block>
-      <navigator class="box" url="/pages/notice/news1/news1">
+      <navigator class="box" url="/pages/notice/news2/news2">
           <view class="news-item" bindtap="bindViewTap">
             <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/new2.jpg?sign=c576328a2f5e274f5fbf898959487033&t=1590830571" mode="aspectFill" class="list-image2"/>
                   <view class="news-text">
@@ -34,12 +49,28 @@
 </view>
 
 <view class=" news-list">
+  <block>
+      <navigator class="box" url="/pages/notice/news8/news8">
+          <view class="news-item" bindtap="bindViewTap">
+            <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/new8.jpg?sign=72b639362a815738fbdea9357cd62024&t=1590888530" mode="aspectFill" class="list-image2"/>
+                  <view class="news-text">
+                      <text class="news-title">【工大百年】百年哈工大全景V\nR|记忆中的校园雪景</text>
+                      <view class="news-stamp">
+                      <text space="emsp">官方发布        2020.05.22</text>
+                      </view>
+                  </view>
+          </view>
+        </navigator>
+  </block>
+</view>
+
+<view class=" news-list">
  <block>
-  <navigator class="box" url="/pages/notice/news1/news1">
+  <navigator class="box" url="/pages/notice/news4/news4">
       <view class="news-item" bindtap="bindViewTap">
         <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/new3.jpg?sign=2ea6cee6686cdc517f14d8296187e5f0&t=1590830672" mode="aspectFill" class="list-image"/>
           <view class="news-text">
-              <text class="news-title">【百年牌面】《自然》杂志特刊推介百年哈工大</text>
+              <text class="news-title">【百年牌面】《自然》杂志特刊推介百年工大</text>
               <view class="news-stamp">
               <text space="emsp">官方报道          2020.05.21</text>
               </view>
@@ -51,13 +82,29 @@
 
 <view class=" news-list">
  <block>
-      <navigator class="box" url="/pages/notice/news2/news2">
+      <navigator class="box" url="/pages/notice/news9/news9">
+            <view class="news-item" bindtap="bindViewTap">
+                <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/new9.png?sign=c22bd8fefc8699c5e5cf369534849c8d&t=1590889467" mode="aspectFill" class="list-image2"/>
+                <view class="news-text">
+                <text class="news-title">【致敬百年】威海校区全景VR\n|四季恋歌</text>
+                <view class="news-stamp">
+                <text space="emsp">官方公告        2020.05.20</text>
+                </view>
+                </view>
+            </view>
+        </navigator>
+ </block>
+</view>
+
+<view class=" news-list">
+ <block>
+      <navigator class="box" url="/pages/notice/news6/news6">
             <view class="news-item" bindtap="bindViewTap">
                 <image src="http://100.hit.edu.cn/xqDisk/image/20200521/1590020547069023551.png" mode="aspectFill" class="list-image2"/>
                 <view class="news-text">
-                <text class="news-title">【规格严格】纪念建校100周年\n海内外校友通报会直播预告</text>
+                <text class="news-title">【致敬百年】纪念建校100周年\n海内外校友通报会“云端”举行</text>
                 <view class="news-stamp">
-                <text space="emsp">官方公告        2020.05.09</text>
+                <text space="emsp">官方公告        2020.05.11</text>
                 </view>
                 </view>
             </view>
@@ -66,7 +113,7 @@
 </view>
 <view class=" news-list">
  <block>
-  <navigator class="box" url="/pages/notice/news1/news1">
+  <navigator class="box" url="/pages/notice/news5/news5">
       <view class="news-item" bindtap="bindViewTap">
         <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/new5.jpg?sign=8ae7d41ca304a651f54b6293c95d6444&t=1590830746" mode="aspectFill" class="list-image2"/>
              <view class="news-text">
@@ -82,7 +129,7 @@
 
 <view class=" news-list">
  <block>
-  <navigator class="box" url="/pages/notice/news1/news1">
+  <navigator class="box" url="/pages/notice/news3/news3">
       <view class="news-item" bindtap="bindViewTap">
           <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/new6.jpg?sign=196d7a4598047c2d734b6855eef5545e&t=1590830770" mode="aspectFill" class="list-image"/>
             <view class="news-text">
@@ -95,5 +142,3 @@
     </navigator>
  </block>
 </view>
-
-   

@@ -44,9 +44,9 @@
         <image class="pic" src="/images/jz.png"/>
         <view class="txt">校友捐款</view>
       </navigator>
-      <navigator class="box" url="">
+      <navigator class="box" bindtap="toBuy" target="miniProgram" open-type="navigate" app-id="wxab81b7b534c8e4cd" path="" eversion="release">
         <image class="pic" src="/images/e.png"/>
-        <view class="txt">XXX</view>
+        <view class="txt">校庆周边</view>
       </navigator>
       <navigator class="box" url="">
         <image class="pic" src="/images/i.png"/>

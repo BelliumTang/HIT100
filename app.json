@@ -1,14 +1,23 @@
 {
   "pages":[ 
     "pages/index/index",
-    "pages/light/light",
-    "pages/timeline/timeline",
     "pages/news/news",
+    "pages/light/light",
+
+    "pages/timeline/timeline",
     "pages/user/user",
     "pages/test/test",
     "pages/logs/logs",
+
     "pages/notice/news1/news1",
-    "pages/notice/news2/news2"
+    "pages/notice/news2/news2",
+    "pages/notice/news3/news3",
+    "pages/notice/news4/news4",
+    "pages/notice/news5/news5",
+    "pages/notice/news6/news6",
+    "pages/notice/news7/news7",
+    "pages/notice/news8/news8",
+    "pages/notice/news9/news9"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -39,12 +48,16 @@
       }
     ]
   },
+
   "useExtendedLib": {
     "kbone": true,
     "weui": true
   },
 
-  "style": "v2",
+  "navigateToMiniProgramAppIdList": [
+    "wxd9a5d36c6f14d58d"
+  ],
+
   "usingComponents": {
     "cu-custom": "/colorui/components/cu-custom"
   },

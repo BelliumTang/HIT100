@@ -1,2 +1,28 @@
 <!--pages/notice/news1/news1.wxml-->
-<text>Happy birthday! HIT!</text>
+<!--pages/post/post-detail/post-detail.wxml-->
+<!--先静后动，先样式再数据-->
+<view class="detail-container">
+  <image class="head-image" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news1.png?sign=25703472c94796c2ebbcce4a8c515e5d&t=1590854837"></image>
+ 
+  <text class="title">【致敬百年】百年哈工大全景VR | \n深圳校区的夏意盎然</text>
+
+  <view class="author-date">
+   <text class="date">深圳校区</text>
+      <text class="const-text">发表于</text>
+      <text class="date">2020-05-23 13:27:46</text>
+  </view>
+    <view class="horizon"></view>
+ 
+  <text class="detail"  space="emsp">  我们在最好的年华与正当芳华的你邂逅。这里不似北国冰城万里雪飘，不似黄海之滨冬夏分明，却有着活力鹏城的四季常青。难忘晨光熹微，HIT广场上书声琅琅；难忘薄暮冥冥，荔枝林中悠然漫步。在这个充满活力的校园里，鹏城深圳的年轻活力与百年工大的厚重积蓄碰撞并存。厚重的理想在学术权杖下开花结果，美好的希望在创新热土上蓄势待发。全景VR视角下，这是你记忆中的哈工大（深圳）吗？\n</text>
+  <text style='display:flex; justify-content:center; align-items:center;padding:10rpx;color:red'>——扫描下方二维码进入全景VR——
+</text>
+<view style='display:flex; justify-content:center; align-items:center;padding:10rpx'>
+<image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news1-1.jpg?sign=74e4a25005565638315f735472a3207f&t=1590855332" show-menu-by-longpress='true' mode='aspectFit' ></image>
+</view>
+
+<view style='display:flex; justify-content:center; align-items:center;padding:10rpx'>
+<image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news2-1.jpg?sign=f92e095a71b7a85c1a264e2ecf51c762&t=1590888107" show-menu-by-longpress='true' mode='aspectFit' ></image>
+</view>
+  
+</view>
+

@@ -21,7 +21,7 @@
  .news-stamp {
       font-size: 25rpx;
       color:darkgray;
-      padding: 60rpx 0rpx 0rpx 10rpx;
+      padding: 55rpx 0rpx 0rpx 10rpx;
       display: flex;
       flex-direction: row;
       justify-content:space-between;

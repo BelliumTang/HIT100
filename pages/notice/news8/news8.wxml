@@ -1,0 +1,28 @@
+<!--pages/notice/news1/news1.wxml-->
+<!--pages/post/post-detail/post-detail.wxml-->
+<!--先静后动，先样式再数据-->
+<view class="detail-container">
+  <image class="head-image" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/925bf1ba-ec8e-4a92-ab23-b713d28fef60.jpg?sign=59e6069b3564c8828484324587bea5d4&t=1590888893"></image>
+ 
+  <text class="title">【工大百年】百年哈工大全景VR|这是你记忆中的校园雪景吗？</text>
+
+  <view class="author-date">
+   <text class="date">本部</text>
+      <text class="const-text">发表于</text>
+      <text class="date">2020-05-22 12:27:46</text>
+  </view>
+    <view class="horizon"></view>
+ 
+  <text class="detail"  space="emsp">  我们在初秋相遇，在深冬道别，在春日重逢，在盛夏离去。寒来暑往，永远不变的是正心诚意的挺立如斯；秋收冬藏，格物致知留下了多少人来人往的足迹。心心念念的是曾经挥洒汗水的球场跑道、校训石旁越来越短的百年倒计时……执手相别，你是否还能忆起，哈工大的一年四季？期待相见，你是否还记得，雪中哈工大的风光？从今天开始，官微以全新视角，推出百年哈工大全景VR栏目，不定期为大家展示一校三区之美。\n 万籁俱寂，冰天雪地中\n 你还记得图中的景色在哪里吗\n 白雪却嫌春色晚，故穿庭院作飞花\n 丁香树即便没有了紫丁香的陪伴\n 却和冰雪一起，尽情伸展着琼枝玉叶\n 身在人境，心在桃花源\n 伫立百年 \n每一条路上\n 都印着一代又一代的莘莘学子\n 一位又一位八百壮士坚实的脚印</text>
+  <text style='display:flex; justify-content:center; align-items:center;padding:10rpx;color:red'>——扫描下方二维码进入全景VR——
+</text>
+<view style='display:flex; justify-content:center; align-items:center;padding:10rpx'>
+<image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news8-1.jpg?sign=5705e68f60253ab8236cc000127f19c5&t=1590888910" show-menu-by-longpress='true' mode='aspectFit' ></image>
+</view>
+
+<view style='display:flex; justify-content:center; align-items:center;padding:10rpx'>
+<image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news2-1.jpg?sign=f92e095a71b7a85c1a264e2ecf51c762&t=1590888107" show-menu-by-longpress='true' mode='aspectFit' ></image>
+</view>
+  
+</view>
+

@@ -1,0 +1,20 @@
+
+<view class="detail-container">
+  <image class="head-image" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news4.jpg?sign=6d7f8722239624ada9c93313103f7c11&t=1590890809"></image>
+ 
+  <text class="title">【百年牌面】《自然》杂志特刊推介百年工大</text>
+
+  <view class="author-date">
+   <text class="date">哈尔滨工业大学</text>
+      <text class="const-text">发表于</text>
+      <text class="date">2020-05-22 10:10:10</text>
+  </view>
+    <view class="horizon"></view>
+ 
+  <text class="detail"  space="emsp">  5月21日，《自然》（Nature）杂志发布哈尔滨工业大学建校100周年特刊。\n  2020年6月7日是哈工大建校100周年纪念日。在《自然》杂志发布的特刊中，中国工程院院士、校长周玉以《通过创新引领科学与工程》为题，面向全球科技英才介绍了学校的办学历史、优势特色、哈工大在科研领域取得的多个“第一”、国际交流与合作、一校三区办学格局等方面的基本情况，并展望了新百年学校的发展前景。\n  此外，特刊还全面展示了哈工大在航天、机电工程、材料科学、自动化、土木工程、环境科学与工程、计算机科学、化学、电子与信息工程、仪器科学、管理、能源工程、建筑、生命科学等领域近年来所取得的标志性成果以及正在建设的国家大科学工程空间环境地面模拟装置的进展情况</text>
+
+  <view style='display:flex; justify-content:center; align-items:center;padding:10rpx'>
+<image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news2-1.jpg?sign=f92e095a71b7a85c1a264e2ecf51c762&t=1590888107" show-menu-by-longpress='true' mode='aspectFit' ></image>
+</view>
+
+</view>

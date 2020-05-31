@@ -1,0 +1,28 @@
+<!--pages/notice/news1/news1.wxml-->
+<!--pages/post/post-detail/post-detail.wxml-->
+<!--先静后动，先样式再数据-->
+<view class="detail-container">
+  <image class="head-image" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news9.png?sign=a0da7a8a2079216b5f2d33173c586b61&t=1590890165"></image>
+ 
+  <text class="title">【致敬百年】威海校区全景VR|四季恋歌</text>
+
+  <view class="author-date">
+   <text class="date">本部</text>
+      <text class="const-text">发表于</text>
+      <text class="date">2020-05-20 13:21:07</text>
+  </view>
+    <view class="horizon"></view>
+ 
+  <text class="detail"  space="emsp">  这里是哈工大威海校区\n  秉承了哈工大百年积淀的文化底蕴\n  吸收了蓝天碧海的钟灵毓秀之气\n  糅合成了独一无二的美丽和魅力\n  日新月异的威海校区，积淀着哈工大一世纪的岁月峥嵘,\n  激荡着逐梦深海的壮志豪情，在蓝天碧海间\n\n  齐鲁大地上\n  哈工大精神永远传承发展\n  哈工大力量始终指引前行\n</text>
+  <text style='display:flex; justify-content:center; align-items:center;padding:10rpx;color:red'>\n——扫描下方二维码进入全景VR——
+</text>
+<view style='display:flex; justify-content:center; align-items:center;padding:10rpx'>
+<image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news9-1.png?sign=4b5ce01eab50c7b8cb81e9fbc72ef61e&t=1590890246" show-menu-by-longpress='true' mode='aspectFit' ></image>
+</view>
+
+<view style='display:flex; justify-content:center; align-items:center;padding:10rpx'>
+<image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news2-1.jpg?sign=f92e095a71b7a85c1a264e2ecf51c762&t=1590888107" show-menu-by-longpress='true' mode='aspectFit' ></image>
+</view>
+  
+</view>
+
