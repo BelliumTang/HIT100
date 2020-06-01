@@ -1,0 +1,24 @@
+<!--pages/notice/news1/news1.wxml-->
+<!--pages/post/post-detail/post-detail.wxml-->
+<!--先静后动，先样式再数据-->
+<view class="detail-container">
+  <image class="head-image" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/activity.jpg?sign=7f9307df253fff4c80426a4fb49418a8&t=1590997599"></image>
+ 
+  <text class="title">校庆活动</text>
+
+  <view class="author-date">
+   <text class="date">开发者</text>
+      <text class="const-text">发表于</text>
+      <text class="date">2020-06-01</text>
+  </view>
+    <view class="horizon"></view>
+ 
+  <text class="detail"  space="emsp"> 在校庆活动板块你可以报名参加校庆活动，申请活动场地等一系列功能，敬请期待！\n</text>
+
+<view style='display:flex; justify-content:center; align-items:center;padding:10rpx'>
+<image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news2-1.jpg?sign=f92e095a71b7a85c1a264e2ecf51c762&t=1590888107" show-menu-by-longpress='true' mode='aspectFit' ></image>
+</view>
+  
+</view>
+
+

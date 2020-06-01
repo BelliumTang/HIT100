@@ -2,9 +2,9 @@
 <!--pages/post/post-detail/post-detail.wxml-->
 <!--先静后动，先样式再数据-->
 <view class="detail-container">
-  <image class="head-image" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/my.jpg?sign=ddfb43326a42bf3540f9e340b958e8b2&t=1591000306"></image>
+  <image class="head-image" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/fly.jpg?sign=dd36df401a7dd640dc66eaa3f7a1a1eb&t=1590998888"></image>
  
-  <text class="title">HIT100 | Happy Birthday！</text>
+  <text class="title">航天精神|工大的航天梦</text>
 
   <view class="author-date">
    <text class="date">开发者</text>
@@ -13,7 +13,7 @@
   </view>
     <view class="horizon"></view>
  
-  <text class="detail"  space="emsp">  HIT100  Happy Birthday！</text>
+  <text class="detail"  space="emsp">  哈尔滨工业大学在航天部的支持和中国空间技术研究院的协助下，建立了我国最早的卫星工程、飞行器环境工程两个航天类新专业和卫星工程、载人航天工程两个教研室。未完待续...</text>
 
     <view style='display:flex; justify-content:center; align-items:center;padding:10rpx'>
       <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news2-1.jpg?sign=f92e095a71b7a85c1a264e2ecf51c762&t=1590888107" show-menu-by-longpress='true' mode='aspectFit' ></image>

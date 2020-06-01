@@ -8,6 +8,11 @@
     "pages/user/user",
     "pages/test/test",
     "pages/logs/logs",
+    "pages/find/find",
+    "pages/activity/activity",
+    "pages/donation/donation",
+    "pages/fly/fly",
+    "pages/love/love",
 
     "pages/notice/news1/news1",
     "pages/notice/news2/news2",
@@ -42,7 +47,7 @@
         "selectedIconPath":"images/user-h.png"
       },{
         "pagePath":"pages/test/test",
-        "text":"XX",
+        "text":"我的",
         "iconPath":"images/list.png",
         "selectedIconPath":"images/list-h.png"
       }
