@@ -2,7 +2,7 @@
 <!--pages/post/post-detail/post-detail.wxml-->
 <!--先静后动，先样式再数据-->
 <view class="detail-container">
-  <image class="head-image" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/my.jpg?sign=ddfb43326a42bf3540f9e340b958e8b2&t=1591000306"></image>
+  <image class="head-image" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/say.png?sign=e9cce643a3da42dfd3b5317fc506fecb&t=1591013081"></image>
  
   <text class="title">HIT100 | Happy Birthday！</text>
 

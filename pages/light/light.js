@@ -138,7 +138,7 @@ var option = {
   visualMap: {
     show: true,
     min: 0,
-    max: 500,
+    max: 607,
     left: 'left',
     top: 'bottom',
     text: ['high'], // 文本，默认为数值文本

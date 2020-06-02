@@ -53,6 +53,4 @@ App({
     userInfo: null
   }
 
-  
-  
 })
