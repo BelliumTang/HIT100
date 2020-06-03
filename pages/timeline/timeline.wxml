@@ -8,34 +8,17 @@
         </view>
         <view class="cu-item text-red cuIcon-attentionforbidfill">
           <view class="content bg-red shadow-blur">
-            界面目前处于测试状态
+            界面目前处于 测试 状态
           </view>
         </view>
-        <view class="cu-item text-grey cuIcon-evaluate_fill">
-          <view class="content bg-grey shadow-blur">
-            2333
-          </view>
-        </view>
+  
         <view class="cu-item text-blue">
           <view class="bg-blue content">
-            <text>20:00</text> 【月球】快件已到达月球，准备发往地球
+            <text>100</text> 一世纪规格功夫，新百年世界一流
           </view>
           <view class="bg-cyan content">
-            <text>10:00</text> 【银河系】快件已到达银河系，准备发往月球
+            <text>规格严格，功夫到家</text> 
           </view>
-  </view>
-</view>
-
-<view class="cu-timeline">
-  <view class="cu-time">2020.05.27</view>
-  <view class="cu-item">
-    <view class="content">
-      <view class="cu-capsule radius">
-        <view class="cu-tag bg-cyan">凌晨</view>
-        <view class="cu-tag line-cyan">01:30</view>
-      </view>
-      <view class="margin-top">大三真好玩！ddl可多了！</view>
-    </view>
   </view>
 </view>
 
@@ -47,7 +30,7 @@
         <view class="cu-tag bg-cyan">凌晨</view>
         <view class="cu-tag line-cyan">02:30</view>
       </view>
-      <view class="margin-top">需要这种精神！</view>
+      <view class="margin-top">大三下真好玩！ddl可多了！需要这种精神！</view>
     </view>
   </view>
   <view class="cu-item text-blue">

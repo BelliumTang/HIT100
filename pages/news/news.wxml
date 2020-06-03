@@ -2,6 +2,21 @@
 <!--index.wxml-->
 <view class=" news-list">
   <block>
+    <navigator class="box" url="/pages/notice/news11/news11">
+        <view class="news-item" bindtap="bindViewTap">
+            <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news11.jpg?sign=5458eb04f560fa61af75a8fdcb400b90&t=1591187779" mode="aspectFill" class="list-image"/>
+              <view class="news-text">
+                <text class="news-title" space="emsp">【重磅预告】15小时不间断直播|邀你见证百年哈工大荣光</text>
+                <view class="news-stamp">
+                <text space="emsp">官方发布         2020.06.03</text>
+              </view>
+            </view>
+        </view>
+      </navigator>
+  </block>
+</view>
+<view class=" news-list">
+  <block>
       <navigator class="box" url="/pages/notice/news10/news10">
           <view class="news-item" bindtap="bindViewTap">
             <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/new10.png?sign=52df11cb0bcc6ce02d4d9099bfb7e3b6&t=1591154307" mode="aspectFill" class="list-image2"/>
@@ -39,7 +54,7 @@
               <view class="news-text">
                 <text class="news-title" space="emsp">【致敬百年】深圳校区全景VR|夏意盎然</text>
                 <view class="news-stamp">
-                <text space="emsp">官方发布         2020.05.23</text>
+                <text space="emsp">官方发布       2020.05.23</text>
               </view>
             </view>
         </view>
@@ -87,7 +102,7 @@
           <view class="news-text">
               <text class="news-title">【百年牌面】《自然》杂志特刊推介百年工大</text>
               <view class="news-stamp">
-              <text space="emsp">官方报道          2020.05.21</text>
+              <text space="emsp">官方报道        2020.05.21</text>
               </view>
           </view>
       </view>
@@ -150,7 +165,7 @@
             <view class="news-text">
               <text class="news-title">【百年工大】哈尔滨工业大学100周年校史回眸</text>
               <view class="news-stamp">
-              <text space="emsp">校史回眸          1920-2020</text>
+              <text space="emsp">校史回眸        1920-2020</text>
             </view>
           </view>
       </view>
