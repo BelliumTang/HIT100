@@ -1,5 +1,4 @@
-<!--pages/notice/news1/news1.wxml-->
-<!--pages/post/post-detail/post-detail.wxml-->
+
 <!--先静后动，先样式再数据-->
 <view class="detail-container">
   <image class="head-image" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news9.png?sign=a0da7a8a2079216b5f2d33173c586b61&t=1590890165"></image>

@@ -2,6 +2,21 @@
 <!--index.wxml-->
 <view class=" news-list">
   <block>
+      <navigator class="box" url="/pages/notice/news10/news10">
+          <view class="news-item" bindtap="bindViewTap">
+            <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/new10.png?sign=52df11cb0bcc6ce02d4d9099bfb7e3b6&t=1591154307" mode="aspectFill" class="list-image2"/>
+                  <view class="news-text">
+                      <text class="news-title">【百年贺礼】百年传承“功夫锤”\n你值得拥有！</text>
+                      <view class="news-stamp">
+                      <text space="emsp">官方发布        2020.06.02</text>
+                      </view>
+                  </view>
+          </view>
+        </navigator>
+  </block>
+</view>
+<view class=" news-list">
+  <block>
       <navigator class="box" url="/pages/notice/news7/news7">
           <view class="news-item" bindtap="bindViewTap">
             <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/new7.jpg?sign=aa2e32d4e67376e3fa1dad25dceb9419&t=1590856251" mode="aspectFill" class="list-image2"/>

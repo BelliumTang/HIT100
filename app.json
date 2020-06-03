@@ -22,7 +22,8 @@
     "pages/notice/news6/news6",
     "pages/notice/news7/news7",
     "pages/notice/news8/news8",
-    "pages/notice/news9/news9"
+    "pages/notice/news9/news9",
+    "pages/notice/news10/news10"
   ],
   "window":{
     "backgroundTextStyle":"light",
