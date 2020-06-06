@@ -1,0 +1,44 @@
+<view bindtap='hideZanAndPinglun'>
+    <view class='header'>
+        <text>  </text>
+        <text>祝福墙</text>
+        <text class='iconfont icon-xiangji' bindtap='showEditPage'></text>
+    </view>
+    <block wx>
+        <view class='single' wx:for="{{deliverData}}" wx:key="{{index}}">
+           <image class="avatar" src="{{item.avatarUrl}}" mode="cover"></image>
+            <view class='main'>
+                <view class='nickname'>{{item.nickName}}</view>
+                <view wx:if="{{item.textareaTxt != 'null'}}">
+                    <view class='main-comtent' style='{{isShowOrHideComtent ? "" : "max-height: 60pt"}}'>
+                    {{item.textareaTxt}}
+                    </view>
+                    <text class='comtent-showOrHide' catchtap='ShowOrHideComtent'>{{allOrPart}}</text>
+                </view>
+                <view class='imgArea' wx:if="{{!item.imgArea}}" bindtap='showImg' data-Outidx="{{index}}">
+                     <view wx:for="{{item.imgURL}}" wx:key="{{index}}">
+                        <image src="{{item}}" mode='aspectFill' data-imgidx="{{index}}" />
+                    </view>
+                </view>
+                <view class='location' wx:if="{{item.location != 'null'}}">
+                    <text class='iconfont icon-zuobiaonormal'></text>
+                    <text>{{item.location}}</text>
+                </view>
+                <view class='timeArea'>
+                    <text>{{item.time}}</text>
+                  
+                </view>
+                <view class='commentArea'>
+                    <view class='like' wx:if="{{item.zan}}">
+                        <text class='iconfont icon-xin'></text>
+                        <text>{{item.zan}}</text>
+                    </view>
+                    <!-- <view class='comment'>
+                        <text class='comment-nickname'>用户名:</text>
+                        <text>评论内容</text>
+                    </view> -->
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

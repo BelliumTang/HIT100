@@ -34,7 +34,7 @@
         <image class="pic" src="/images/movie.png"/>
         <view class="txt">工大回忆</view>
       </navigator>
-      <navigator class="box" url="/pages/love/love">
+      <navigator class="box" url="/pages/blessWall/blessWall">
         <image class="pic" src="/images/love.png"/>
         <view class="txt">留言祝福</view>
       </navigator>  

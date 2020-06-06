@@ -13,6 +13,8 @@
     "pages/donation/donation",
     "pages/fly/fly",
     "pages/love/love",
+    "pages/blessWall/blessWall",
+    "pages/edit/edit",
 
     "pages/notice/news1/news1",
     "pages/notice/news2/news2",
