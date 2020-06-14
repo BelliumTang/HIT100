@@ -32,12 +32,20 @@
       <input name="tutor" placeholder="请输入你的导师"></input>
       	<text class="cuIcon-friendfill text-yellow"></text>
     </view>
-
 <view class="cu-form-group">
 		<view class="title">学历(必填)</view>
 		<picker bindchange="PickerChange" value="{{education}}" range="{{picker}}">
 			<view class="picker">
 				{{education?picker[education]:'请选择'}}
+			</view>
+		</picker>
+	</view>
+
+<view class="cu-form-group">
+		<view class="title">校区(必填)</view>
+		<picker bindchange="SchoolChange" value="{{SchoolLocation}}" range="{{Schoolpicker}}">
+			<view class="picker">
+				{{SchoolLocation?Schoolpicker[SchoolLocation]:'请选择'}}
 			</view>
 		</picker>
 	</view>

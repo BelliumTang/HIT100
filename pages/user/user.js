@@ -4,8 +4,10 @@ Page({
     StatusBar: app.globalData.StatusBar,
     CustomBar: app.globalData.CustomBar,
     education: null,
+    SchoolLocation: null,
     
     picker: ['本科', '硕士', '博士'],
+    Schoolpicker: ['本部', '威海校区', '深圳校区'],
 
     time: '06:07',
     date: '2020-06-07',
@@ -25,6 +27,12 @@ Page({
     console.log(e);
     this.setData({
       education: e.detail.value
+    })
+  },
+  SchoolChange(e) {
+    console.log(e);
+    this.setData({
+      SchoolLocation: e.detail.value
     })
   },
   MultiChange(e) {
@@ -146,11 +154,19 @@ Page({
         icon: 'loading',
         duration: 2000
       })
+      setTimeout(function () {
+        wx.hideToast()
+      }, 2000)
+    }else if (this.data.SchoolLocation == null) {
+      wx.showToast({
+        title: '校区不能为空!',
+        icon: 'loading',
+        duration: 2000
+      })
 
       setTimeout(function () {
         wx.hideToast()
       }, 2000)
-
     }else if (res.detail.value.EnrollmentTime > res.detail.value.GraduationTime) {
       wx.showToast({
         title: '请检查入学时间!',
@@ -203,10 +219,11 @@ Page({
     var classname = res.detail.value.classname
     var tutor = res.detail.value.tutor
     var education = this.data.picker[this.data.education]
+    var SchoolLocation =  this.data.Schoolpicker[this.data.SchoolLocation]
     var EnrollmentTime = res.detail.value.EnrollmentTime
     var GraduationTime = res.detail.value.GraduationTime
   
-    console.log(name,tel,StudentID,faculty,classname,education,EnrollmentTime,GraduationTime,tutor)
+    console.log(name,tel,StudentID,faculty,classname,education,SchoolLocation,EnrollmentTime,GraduationTime,tutor)
   },
 
 })

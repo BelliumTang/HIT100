@@ -6,12 +6,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 30rpx;
-    /* background-color: rgba(87,107,149,0.1); */
+    background-color:white; 
     height: 30pt;
 }
 .header > text:nth-child(2){
     font-size: 14pt;
     font-weight: bold;
+    color: tomato;
 }
 
 button {
