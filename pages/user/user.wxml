@@ -1,22 +1,72 @@
-<view class="detail-container">
-  <image class="head-image" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/user.jpg?sign=59cf1d452ff3434b3effb30a80442d94&t=1591002088"></image>
- 
-  <text class="title">小彩蛋 | surprise！</text>
-
-  <view class="author-date">
-   <text class="date">开发者</text>
-      <text class="const-text">发表于</text>
-      <text class="date">2020-06-01</text>
-  </view>
-    <view class="horizon"></view>
- 
-  <text class="detail"  space="emsp">  假装这里有个视频2333，微信官方不支持个人开发的小程序里放视频，提交审核的时候被打回来了说必须删掉才能发布，彩蛋没有了 ：)</text>
-
-    <view style='display:flex; justify-content:center; align-items:center;padding:10rpx'>
-      <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news2-1.jpg?sign=f92e095a71b7a85c1a264e2ecf51c762&t=1590888107" show-menu-by-longpress='true' mode='aspectFit' ></image>
+<form bindsubmit="SubmitActivity">
+	
+    <view class="cu-form-group">
+      <view class="title">姓名</view>
+      <input name="name" placeholder="请输入你的真实姓名(必填)"></input>
+      	<text class="cuIcon-people text-blue"></text>
     </view>
-  
-</view>
+
+    <view class="cu-form-group">
+      <view class="title">手机</view>
+      <input name="tel" placeholder="请输入你的手机(必填)"></input>
+      	<text class="cuIcon-phone text-orange"></text>
+    </view>
+
+    <view class="cu-form-group bg-white margin-top">
+      <view class="title">学号</view>
+      <input name="StudentID" placeholder="请输入你的学号"></input>
+      	<text class="cuIcon-card text-green"></text>
+    </view>
+    <view class="cu-form-group bg-white">
+      <view class="title">学院</view>
+      <input name="faculty" placeholder="请输入你的学院(必填)"></input>
+      	<text class="cuIcon-home text-cyan"></text>
+    </view>
+       <view class="cu-form-group bg-white">
+      <view class="title">班级</view>
+      <input name="classname" placeholder="请输入你的班级"></input>
+      	<text class="cuIcon-group text-Grey"></text>
+    </view>
+       <view class="cu-form-group bg-white">
+      <view class="title">导师</view>
+      <input name="tutor" placeholder="请输入你的导师"></input>
+      	<text class="cuIcon-friendfill text-yellow"></text>
+    </view>
+
+<view class="cu-form-group">
+		<view class="title">学历(必填)</view>
+		<picker bindchange="PickerChange" value="{{education}}" range="{{picker}}">
+			<view class="picker">
+				{{education?picker[education]:'请选择'}}
+			</view>
+		</picker>
+	</view>
+
+    <view class="cu-form-group">
+      <view class="title">入学时间(必填)</view>
+      <picker name="EnrollmentTime" mode="date" value="2017-09-01" start="1920-08-08" end="2200-06-07" bindchange="ETChange">
+        <view class="picker">
+          {{EnrollmentTime}}
+        </view>
+      </picker>
+    </view>
+
+    <view class="cu-form-group">
+      <view  class="title">毕业时间(必填)</view>
+      <picker name="GraduationTime" mode="date" value="2021-07-01" start="1920-08-08" end="2200-06-07" bindchange="GTChange">
+        <view class="picker">
+          {{GraduationTime}}
+        </view>
+      </picker>
+    </view>
+
+    <view class="button-sp-area" style="display: flex;flex-direction: row;justify-content:center; width:500rpx; text-align: center;padding:10rpx;">
+          <button type="primary" bindtap="" form-type="submit">提交信息</button>
+    </view>
+
+  </form>
+
+
 
 
 

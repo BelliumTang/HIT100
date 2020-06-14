@@ -1,21 +1,24 @@
 {
-  "pages":[ 
+  "pages":[
     "pages/index/index",
+    "pages/user/user",
+    "pages/createActivity/createActivity",
+    "pages/regist/regist", 
+    "pages/activity/activity",
     "pages/news/news",
     "pages/light/light",
-
     "pages/timeline/timeline",
-    "pages/user/user",
+    
     "pages/test/test",
     "pages/logs/logs",
     "pages/find/find",
-    "pages/activity/activity",
+  
     "pages/donation/donation",
     "pages/fly/fly",
     "pages/love/love",
-    "pages/blessWall/blessWall",
+    "pages/blesswall/blesswall",
     "pages/edit/edit",
-
+  
     "pages/notice/news1/news1",
     "pages/notice/news2/news2",
     "pages/notice/news3/news3",
@@ -45,13 +48,13 @@
         "iconPath":"images/home.png",
         "selectedIconPath":"images/home-h.png"
       },{
-        "pagePath":"pages/user/user",
-        "text":"用户",
+        "pagePath":"pages/regist/regist",
+        "text":"我的",
         "iconPath":"images/user.png",
         "selectedIconPath":"images/user-h.png"
       },{
         "pagePath":"pages/test/test",
-        "text":"我的",
+        "text":"HIT",
         "iconPath":"images/list.png",
         "selectedIconPath":"images/list-h.png"
       }

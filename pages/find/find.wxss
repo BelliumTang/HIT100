@@ -1,69 +1,147 @@
-.detail-container {
+.mycontainer {
+  font-size: 10pt;
+  color: #353535;
+  
+  top: 10rpx;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: white;
+  
+  justify-content: space-between;
+
 }
-.head-image {
-  background-color: #ff6900;
+
+.bg {
+  background: #ececec;
+}
+
+.scroll-view_H {
+  white-space: nowrap;
+}
+
+.scroll-view-item-img {
   width: 100%;
-  height: 460rpx;
+  height: 100%;
 }
 
-.author-date {
-  flex-direction: row;
-  margin-left: 30rpx;
-  margin-top: 20rpx;
+.scroll-view-item_H {
+  display: inline-block;
+  width: 100%;
+  height: 350rpx;
 }
 
-.author {
-  font-size: 30rpx;
-  font-weight: 300;
-  margin-left: 20rpx;
-  vertical-align: middle;
-  color: #666;
+.list-box {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 0rpx,0rpx,100rpx,100rpx;
 }
 
-.const-text {
-  font-size: 24rpx;
-  color: #999;
-  margin-left: 20rpx;
-}
-
-.date {
-  font-size: 24rpx;
-  margin-left: 30rpx;
-  vertical-align: middle;
-  color: #999;
-}
-
-.title {
-  margin-left: 40rpx;
-  font-size: 36rpx;
-  font-weight: 700;
-  margin-top: 30rpx;
-  letter-spacing: 2px;
-  color: #4b556c;
-}
-
-.horizon {
-  width: 660rpx;
-  height: 2rpx;
-  background-color: black;
-  vertical-align: middle;
+.list-item {
   position: relative;
-  top: 46rpx;
-  margin: 0 auto;
-  z-index: -99;
+  border-bottom: 1px solid #eee;
+  padding: 10px,0,10rpx,10rpx;
 }
 
-.detail {
-  color: #666;
-  margin-left: 30rpx;
-  margin-top: 20rpx;
-  margin-right: 30rpx;
-  line-height: 44rpx;
-  letter-spacing: 2px;
-  font-size: 24rpx;
-  font-family: MicroSoft Yahei;
+.list-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
 
+.list-item::last {
+  border: none;
+}
+
+.list-avatar {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.list-name {
+  height: 30px;
+  line-height: 30px;
+}
+
+.list-des {
+  margin-top: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.list-image {
+  margin-top: 10px;
+  margin-right: 5px;
+  width: 100px;
+  height: 100px;
+}
+
+.list-address {
+  color: #999;
+}
+
+.list-time {
+  min-height: 20px;
+  line-height: 16px;
+  color: #999;
+  margin-top: 5px;
+}
+
+.section {
+  background:white;
+  right: 0rpx;
+  left: 0rpx;
+  padding: 100rpx,100rpx,100rpx,100rpx;
+}
+
+.section-title {
+  padding: 5px;
+  font-size: 14px;
+  margin-left: 5px;
+  border-left: 5px solid lightblue;
+}
+
+.list-icon {
+  float: left;
+  margin-top: 2px;
+  width: 15px;
+  height: 15px;
+}
+
+.list-icon-text {
+  margin-left: 20px;
+}
+
+.list-type {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  background: #eee;
+  padding: 5px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.list-type-money {
+  background: #ffa404;
+  color: #fff;
+}
+
+.list-botton {
+  padding: 10px;
+  text-align: right;
+}
+
+.list-bottom-icon {
+  width: 20px;
+  height: 20px;
+}

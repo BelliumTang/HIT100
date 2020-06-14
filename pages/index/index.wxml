@@ -6,7 +6,7 @@
     <swiper-item><image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/h2.png?sign=3bcc82af2f5ecea6d782218bd19709ec&t=1590634225"/></swiper-item>
     <swiper-item><image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/h4.png?sign=e5b7009f7a591402f6d4769cbf6308f8&t=1590632011"/></swiper-item>
     <swiper-item><image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/h5.png?sign=4211c0c2b8310e13710b0d9d3ebfa564&t=1590634098"/></swiper-item>
-
+    <swiper-item><image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E8%BD%AE%E6%92%AD%E5%9B%BE.png?sign=12434d0917dd96a7a0953c0b38e157cb&t=1591670776"/></swiper-item>
     <swiper-item><image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/h7.jpg?sign=bd85631dc505bc7296a87b2b18527128&t=1590738566"/></swiper-item>
   </swiper>
 </view>
@@ -34,7 +34,7 @@
         <image class="pic" src="/images/movie.png"/>
         <view class="txt">工大回忆</view>
       </navigator>
-      <navigator class="box" url="/pages/blessWall/blessWall">
+      <navigator class="box" url="/pages/love/love">
         <image class="pic" src="/images/love.png"/>
         <view class="txt">留言祝福</view>
       </navigator>  

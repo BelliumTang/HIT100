@@ -3,14 +3,10 @@ Page({
   data: {
     StatusBar: app.globalData.StatusBar,
     CustomBar: app.globalData.CustomBar,
-    education: null,
+    index: null,
     
-    picker: ['本科', '硕士', '博士'],
-
     time: '06:07',
     date: '2020-06-07',
-    EnrollmentTime:'2017-09-01',
-    GraduationTime:'2021-07-01',
    
     images: [],
     modalName: null,
@@ -24,7 +20,7 @@ Page({
   PickerChange(e) {
     console.log(e);
     this.setData({
-      education: e.detail.value
+      index: e.detail.value
     })
   },
   MultiChange(e) {
@@ -38,14 +34,9 @@ Page({
       time: e.detail.value
     })
   },
-  ETChange(e) {
+  DateChange(e) {
     this.setData({
-      EnrollmentTime: e.detail.value
-    })
-  },
-  GTChange(e) {
-    this.setData({
-      GraduationTime: e.detail.value
+      date: e.detail.value
     })
   },
   RegionChange: function(e) {
@@ -107,7 +98,7 @@ Page({
  //提交活动信息表单到数据库
   SubmitActivity(res){
     console.log(res)
-    if (res.detail.value.name.length == 0) {
+    if (res.detail.value.title.length == 0) {
       wx.showToast({
         title: '名称不能为空!',
         icon: 'loading',
@@ -129,31 +120,9 @@ Page({
         wx.hideToast()
       }, 2000)
 
-    } else if (res.detail.value.faculty.length == 0) {
+    } else if (res.detail.value.address.length == 0) {
       wx.showToast({
-        title: '学院不能为空!',
-        icon: 'loading',
-        duration: 2000
-      })
-
-      setTimeout(function () {
-        wx.hideToast()
-      }, 2000)
-
-    } else if (this.data.education == null) {
-      wx.showToast({
-        title: '学历不能为空!',
-        icon: 'loading',
-        duration: 2000
-      })
-
-      setTimeout(function () {
-        wx.hideToast()
-      }, 2000)
-
-    }else if (res.detail.value.EnrollmentTime > res.detail.value.GraduationTime) {
-      wx.showToast({
-        title: '请检查入学时间!',
+        title: '地点不能为空!',
         icon: 'loading',
         duration: 2000
       })
@@ -196,17 +165,15 @@ Page({
 
     }
 
-    var name = res.detail.value.name
+    var title = res.detail.value.title
     var tel = res.detail.value.tel
-    var StudentID = res.detail.value.StudentID
-    var faculty = res.detail.value.faculty
-    var classname = res.detail.value.classname
-    var tutor = res.detail.value.tutor
-    var education = this.data.picker[this.data.education]
-    var EnrollmentTime = res.detail.value.EnrollmentTime
-    var GraduationTime = res.detail.value.GraduationTime
-  
-    console.log(name,tel,StudentID,faculty,classname,education,EnrollmentTime,GraduationTime,tutor)
+    var address = res.detail.value.address
+    var date = res.detail.value.date
+    var startTime = res.detail.value.startTime
+    var detail = res.detail.value.detail
+    var images = this.data.images
+
+    console.log(title,tel,address,date,startTime,detail,images)
   },
 
 })

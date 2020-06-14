@@ -1,0 +1,82 @@
+<form bindsubmit="SubmitActivity">
+	
+    <view class="cu-form-group">
+      <view class="title">活动主题</view>
+      <input name="title" placeholder="请输入活动主题"></input>
+       <text class="cuIcon-crown text-yellow"></text>
+    </view>
+
+    <view class="cu-form-group">
+      <view class="title">手机号码</view>
+      <input name="tel" placeholder="请输入你的手机"></input>
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-blue">
+          +86
+        </view>
+        <view class="cu-tag line-blue">
+          中国大陆
+        </view>
+      </view>
+    </view>
+
+    <view class="cu-form-group">
+      <view  class="title">活动地点</view>
+      <input name="address" placeholder="请输入活动地点"></input>
+      <text class="cuIcon-locationfill text-orange"></text>
+    </view>
+
+
+    <view class="cu-form-group">
+      <view  class="title">活动日期</view>
+      <picker name="date" mode="date" value="{{currentDate}}" start="{{currentDate}}" end="2200-06-07" bindchange="DateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+    </view>
+
+    <view class="cu-form-group">
+      <view class="title">开始时间</view>
+        <picker name="startTime" mode="time" value="{{time}}" start="00:01" end="23:59" bindchange="TimeChange">
+        <view class="picker">
+          {{time}}
+        </view>
+      </picker>
+    </view>
+
+    <view class="cu-bar bg-white margin-top">
+      <view class="action">
+        图片上传（可上传活动微信群二维码）
+      </view>
+      <view class="action">
+        {{images.length}}/4
+      </view>
+    </view>
+    <view class="cu-form-group">
+      <view class="grid col-4 grid-square flex-sub">
+        <view class="bg-img" wx:for="{{images}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{images[index]}}">
+          <image src='{{images[index]}}' mode='aspectFill'></image>
+          <view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+            <text class="cuIcon-close"></text>
+          </view>
+        </view>
+        <view class="solids" bindtap="ChooseImage" wx:if="{{images.length<4}}">
+          <text class="cuIcon-cameraadd"></text>
+        </view>
+      </view>
+    </view>
+    
+    <view class="cu-form-group margin-top">
+      <textarea name="detail" maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaAInput" placeholder="活动详细说明(50字内)"></textarea>
+    </view>   
+    
+    <view class="button-sp-area" style="display: flex;flex-direction: row;justify-content:center; width:500rpx; text-align: center;padding:10rpx;">
+          <button type="primary" bindtap="" form-type="submit">创建活动</button>
+    </view>
+
+  </form>
+
+
+
+
+

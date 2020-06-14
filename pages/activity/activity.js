@@ -1,66 +1,48 @@
-// pages/activity/activity.js
+var data = require('../../data/data.js');
+console.log(data);
+var order = ['red', 'yellow', 'blue', 'green', 'red']
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    toView: 'red',
+    list: data.list,
+    scrollTop: 100
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  upper: function(e) {
+    console.log(e)
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  lower: function(e) {
+    console.log(e)
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  scroll: function(e) {
+    console.log(e)
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
+  tap: function(e) {
+    for (var i = 0; i < order.length; ++i) {
+      if (order[i] === this.data.toView) {
+        this.setData({
+          toView: order[i + 1]
+        })
+        break
+      }
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
+  tapMove: function(e) {
+    this.setData({
+      scrollTop: this.data.scrollTop + 10
+    })
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
+  detial: function(e) {
+    wx.navigateTo({
+      url: '/pages/detial/detial?id=' + e.target.dataset.id
+    });
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
+  create: function() {
+    wx.navigateTo({
+      url: ''
+    });
   },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  gotoCreate: function(){ wx.navigateTo({ url: '/pages/createActivity/createActivity' }) },
+  onload: function(options) {
+    console.log('options', options);
   }
 })

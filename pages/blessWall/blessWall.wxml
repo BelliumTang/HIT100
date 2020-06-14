@@ -1,7 +1,7 @@
 <view bindtap='hideZanAndPinglun'>
     <view class='header'>
         <text>  </text>
-        <text>祝福墙</text>
+        <text>百年校庆祝福墙</text>
         <text class='iconfont icon-xiangji' bindtap='showEditPage'></text>
     </view>
     <block wx>
