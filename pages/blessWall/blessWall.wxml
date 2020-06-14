@@ -1,9 +1,10 @@
 <view bindtap='hideZanAndPinglun'>
     <view class='header'>
         <text>  </text>
-        <text>百年校庆祝福墙</text>
+        <text>♥百年校庆祝福墙♥</text>
         <text class='iconfont icon-xiangji' bindtap='showEditPage'></text>
     </view>
+      <view class="line"></view>
     <block wx>
         <view class='single' wx:for="{{deliverData}}" wx:key="{{index}}">
            <image class="avatar" src="{{item.avatarUrl}}" mode="cover"></image>
@@ -40,5 +41,7 @@
                 </view>
             </view>
         </view>
+        <view class="line"></view>
     </block>
+     <view class="line"></view>
 </view>

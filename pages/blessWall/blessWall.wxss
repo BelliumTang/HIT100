@@ -132,3 +132,8 @@ button {
     color: #576b95; 
     font-weight: bold;
 }
+
+.line {
+    border: 1px solid #ccc;
+    opacity: 0.3;
+  }
