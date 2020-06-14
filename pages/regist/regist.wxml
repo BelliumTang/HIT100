@@ -33,15 +33,24 @@
     </view>
    <view class="hr"></view>
 
-    <view class='item'>
+    <view class='item' bindtap="GoToMyCreate">
       <image class='item-image' src='/images/act.png'></image>
-      <view class="item-text">我的活动</view>
+      <view class="item-text">我创建的活动</view>
       <view class="detail2">
         <text>></text>
       </view>
     </view>
     <view class="line"></view>
     
+      <view class='item' bindtap="GoToMyAct">
+      <image class='item-image' src='/images/myact.png'></image>
+      <view class="item-text">我参加的活动</view>
+      <view class="detail2">
+        <text>></text>
+      </view>
+    </view>
+    <view class="line"></view>
+
     <view class='item'>
       <image class='item-image' src='/images/set.png'></image>
       <view class="item-text">设置</view>

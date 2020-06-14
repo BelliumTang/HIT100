@@ -2,6 +2,8 @@
   "pages":[
     "pages/index/index",
     "pages/user/user",
+    "pages/mycreate/mycreate",
+    "pages/myActivity/myActivity",
     "pages/createActivity/createActivity",
     "pages/regist/regist", 
     "pages/activity/activity",

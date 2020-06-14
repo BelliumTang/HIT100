@@ -101,6 +101,21 @@ Page({
       url: '/pages/user/user'
     });
   },
+
+  GoToMyAct: function(){
+    //console.log('用户信息完善');
+    wx.navigateTo({
+      url: '/pages/myActivity/myActivity'
+    });
+  },
+
+  GoToMyCreate: function(){
+    //console.log('用户信息完善');
+    wx.navigateTo({
+      url: '/pages/mycreate/mycreate'
+    });
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
