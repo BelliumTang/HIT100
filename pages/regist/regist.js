@@ -11,6 +11,7 @@ Page({
     //判断小程序的API，回调，参数，组件等是否在当前版本可用。
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     isHide: false,
+    loginlist:[],
   },
   //事件处理函数
   bindViewTap: function() {
@@ -43,14 +44,14 @@ Page({
                   // console.log("用户的code:" + res.code);
                   // 可以传给后台，再经过解析获取用户的 openid
                   // 或者可以直接使用微信的提供的接口直接获取 openid ，方法如下：
-                  // wx.request({
-                  //     // 自行补上自己的 APPID 和 SECRET
-                  //     url: 'https://api.weixin.qq.com/sns/jscode2session?appid=自己的APPID&secret=自己的SECRET&js_code=' + res.code + '&grant_type=authorization_code',
-                  //     success: res => {
-                  //         // 获取到用户的 openid
-                  //         console.log("用户的openid:" + res.data.openid);
-                  //     }
-                  // });
+                  wx.request({
+                      // 自行补上自己的 APPID 和 SECRET
+                      url: 'https://api.weixin.qq.com/sns/jscode2session?appid=wxa6506cc79549d1e0&secret=d1e810c01c98fd34b9deb006517ce7ca&js_code=' + res.code + '&grant_type=authorization_code',
+                      success: res => {
+                          // 获取到用户的 openid
+                          console.log("用户的openid:" + res.data.openid);
+                      }
+                  });
                 }
               });
             }
@@ -78,6 +79,23 @@ Page({
         isHide: false,
         userInfo: e.detail.userInfo
       });
+     
+      wx.request({
+        url: 'https:/api.mgiant.cn:8080/user/login',
+        method:"get",//请求方式post/get
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        success: function (res) {
+          //将获取到的json数据，存在名字叫list的这个数组中
+          that.setData({
+            loginlist: res.data,
+            //res代表success函数的事件对，data是固定的，list是数组
+          })
+          console.log(res);
+        }
+      })
+
     } else {
       //用户按了拒绝按钮
       wx.showModal({
