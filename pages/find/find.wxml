@@ -14,23 +14,36 @@
             <view class="list-item">
                 <image class="list-avatar" src="{{item.avatar}}"></image>
                 <view class="list-name">{{item.name}}</view>
-              
+
+                 <view class="list-address fz-10">
+                    <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E6%A0%A1%E5%8C%BA.png?sign=c6880b4641f83da8d3e6ea89d1a89f25&t=1592206614"></image>
+                    <view class="list-icon-text vm">校区：{{item.address}}</view>
+                </view>
+
+
                 <view class="list-address fz-10">
                     <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E5%9C%B0%E7%82%B9.png?sign=82208a37a1aa3e7a1a9e43bd25354574&t=1591880536"></image>
-                    <text>所在学院</text>
-                    <view class="list-icon-text vm">{{item.address}}</view>
+                    <view class="list-icon-text vm">学院：{{item.address}}</view>
+                </view>
+
+                <view class="list-address fz-10">
+                    <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E4%B8%93%E4%B8%9A.png?sign=dd1d822cf07c3623900ffcbfbeacacec&t=1592206154"></image>
+                    <view class="list-icon-text vm">专业：{{item.address}}</view>
+                </view>
+
+                <view class="list-address fz-10">
+                    <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E5%8D%9A%E5%A3%AB.png?sign=7bcd09b885bb097706b5b6fb5078aa03&t=1592206020"></image>
+                    <view class="list-icon-text vm">学历：{{item.address}}</view>
                 </view>
 
                 <view class="list-time fz-10">
-                    <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E6%97%B6%E9%97%B4.png?sign=16aff38d01e1f4f90bf81022fe439827&t=1591880696"></image>
-                    <text>入学时间</text>
-                    <view class="list-icon-text vm">{{item.time}}</view>
+                    <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E6%97%B6%E9%97%B4%20(1).png?sign=8f518e9f2fd09df020745cd4d22ae3b3&t=1592205944"></image>
+                    <view class="list-icon-text vm">入学时间：{{item.time}}</view>
                 </view>
 
                 <view class="list-time fz-10">
-                    <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E6%97%B6%E9%97%B4.png?sign=16aff38d01e1f4f90bf81022fe439827&t=1591880696"></image>
-                    <text>毕业时间</text>
-                    <view class="list-icon-text vm">{{item.time}}</view>
+                    <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E6%97%B6%E9%97%B4%20(2).png?sign=699df9d3a51a5fd0e5932c91e2727f2e&t=1592205963"></image>
+                    <view class="list-icon-text vm">毕业时间：{{item.time}}</view>
                 </view>
 
                 <view class="list-address fz-10">

@@ -118,7 +118,8 @@
 }
 
 .list-icon-text {
-  margin-left: 20px;
+  margin-left: 25px;
+  margin-top:22rpx;
 }
 
 .list-type {
