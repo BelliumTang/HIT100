@@ -5,6 +5,7 @@ Page({
     CustomBar: app.globalData.CustomBar,
     education: null,
     SchoolLocation: null,
+    major:null,
     
     picker: ['本科', '硕士', '博士'],
     Schoolpicker: ['本部', '威海校区', '深圳校区'],
@@ -196,7 +197,7 @@ Page({
         },
         success: function (res) {
           console.log(res);
-          if (res.data.status != 200) {
+          if (res.statusCode != 200) {
             wx.showToast({
               title: '提交失败！！！',
               icon: 'loading',
@@ -232,6 +233,7 @@ Page({
               verify_campus :  this.data.Schoolpicker[this.data.SchoolLocation],
               verify_startyear : res.detail.value.EnrollmentTime,
               verify_endyear : res.detail.value.GraduationTime,
+              verify_major:  res.detail.value.major,
             }),
             method:"post",//请求方式post/get
             headers: {
@@ -257,8 +259,9 @@ Page({
     var EnrollmentTime = res.detail.value.EnrollmentTime
     var GraduationTime = res.detail.value.GraduationTime
     var code =  this.data.usercode
+    var major =  res.detail.value.major
   
-    console.log(code,name,tel,StudentID,faculty,classname,education,SchoolLocation,EnrollmentTime,GraduationTime,tutor)
+    console.log(code,name,tel,StudentID,faculty,major,classname,education,SchoolLocation,EnrollmentTime,GraduationTime,tutor)
   },
 
   /**

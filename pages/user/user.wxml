@@ -22,6 +22,11 @@
       <input name="faculty" placeholder="请输入你的学院(必填)"></input>
       	<text class="cuIcon-home text-cyan"></text>
     </view>
+    <view class="cu-form-group bg-white">
+      <view class="title">专业</view>
+      <input name="major" placeholder="请输入你的专业"></input>
+      	<text class="cuIcon-home text-cyan"></text>
+    </view>
        <view class="cu-form-group bg-white">
       <view class="title">班级</view>
       <input name="classname" placeholder="请输入你的班级"></input>
