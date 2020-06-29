@@ -4,8 +4,11 @@ var order = ['red', 'yellow', 'blue', 'green', 'red']
 Page({
   data: {
     toView: 'red',
-    list: data.list,
-    scrollTop: 100
+    list: [],
+    scrollTop: 100,
+    dialogShow: false,
+    usercode:[],
+    buttons: [{text: '帮校友验证成功！'}]
   },
   upper: function(e) {
     console.log(e)
@@ -31,18 +34,80 @@ Page({
       scrollTop: this.data.scrollTop + 10
     })
   },
-  detial: function(e) {
-    wx.navigateTo({
-      url: '/pages/detial/detial?id=' + e.target.dataset.id
-    });
-  },
+  
   create: function() {
     wx.navigateTo({
       url: ''
     });
   },
-  gotoCreate: function(){ wx.navigateTo({ url: '/pages/createActivity/createActivity' }) },
-  onload: function(options) {
-    console.log('options', options);
-  }
+  verify: function(e){  
+    var that = this;
+    wx.request({
+      url: 'https://api.mgiant.cn:8080/user/login',
+      data:{
+    
+      },
+      method:"get",//请求方式post/get
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      success: function (res) {
+        //将获取到的json数据，存在名字叫list的这个数组中
+        that.setData({
+          // loginlist: res.data,
+          //res代表success函数的事件对，data是固定的，list是数组
+        
+        })
+        console.log(res);
+      } 
+    })
+
+    that.setData({
+    dialogShow: true,
+    })
+    console.log(e.currentTarget.dataset.id)
+  },
+
+  tapDialogButton(e) {
+    this.setData({
+          dialogShow: false,
+          //lightshow:false
+       })
+    //console.log(e)
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function() {
+    var that = this;
+      wx.login({
+        success: res1 => {
+          // 获取到用户的 code 之后：res.code
+          console.log("寻找校友的code:" + res1.code);
+          that.setData({
+            usercode: res1.code
+          });
+            wx.request({
+            url: 'https://api.mgiant.cn:8080/verify/alumni',
+            data: {
+              code: res1.code,
+            }, 
+            method:"get",//请求方式post/get
+
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            success: function (res) {
+              //将获取到的json数据，存在名字叫list的这个数组中
+              that.setData({
+                list: res.data,
+              })
+              console.log(res);
+            } 
+          })
+        }
+      });
+    }
+     
 })

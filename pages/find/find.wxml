@@ -12,49 +12,55 @@
 
         <view class="list-box" wx:for="{{list}}">
             <view class="list-item">
-                <image class="list-avatar" src="{{item.avatar}}"></image>
-                <view class="list-name">{{item.name}}</view>
+                <image class="list-avatar" src="{{verify_avataurl}}"></image>
+                <view class="list-name">{{item.user_name}}</view>
 
                  <view class="list-address fz-10">
                     <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E6%A0%A1%E5%8C%BA.png?sign=c6880b4641f83da8d3e6ea89d1a89f25&t=1592206614"></image>
-                    <view class="list-icon-text vm">校区：{{item.address}}</view>
+                    <view class="list-icon-text vm">校区：{{item.verify_campus}}</view>
                 </view>
 
 
                 <view class="list-address fz-10">
                     <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E5%9C%B0%E7%82%B9.png?sign=82208a37a1aa3e7a1a9e43bd25354574&t=1591880536"></image>
-                    <view class="list-icon-text vm">学院：{{item.address}}</view>
+                    <view class="list-icon-text vm">学院：{{item.verify_department}}</view>
                 </view>
 
                 <view class="list-address fz-10">
                     <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E4%B8%93%E4%B8%9A.png?sign=dd1d822cf07c3623900ffcbfbeacacec&t=1592206154"></image>
-                    <view class="list-icon-text vm">专业：{{item.address}}</view>
+                    <view class="list-icon-text vm">专业：{{item.verify_major}}</view>
                 </view>
 
                 <view class="list-address fz-10">
                     <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E5%8D%9A%E5%A3%AB.png?sign=7bcd09b885bb097706b5b6fb5078aa03&t=1592206020"></image>
-                    <view class="list-icon-text vm">学历：{{item.address}}</view>
+                    <view class="list-icon-text vm">学历：{{item.verify_scholar}}</view>
                 </view>
 
                 <view class="list-time fz-10">
                     <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E6%97%B6%E9%97%B4%20(1).png?sign=8f518e9f2fd09df020745cd4d22ae3b3&t=1592205944"></image>
-                    <view class="list-icon-text vm">入学时间：{{item.time}}</view>
+                    <view class="list-icon-text vm">入学时间：{{item.verify_startyear}}</view>
                 </view>
 
                 <view class="list-time fz-10">
                     <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E6%97%B6%E9%97%B4%20(2).png?sign=699df9d3a51a5fd0e5932c91e2727f2e&t=1592205963"></image>
-                    <view class="list-icon-text vm">毕业时间：{{item.time}}</view>
+                    <view class="list-icon-text vm">毕业时间：{{item.verify_endyear}}</view>
                 </view>
 
                 <view class="list-address fz-10">
                     <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E7%94%B5%E8%AF%9D.png?sign=3da750155f511b6854af8c0f1672fa8f&t=1591880568"></image>
-                    <view class="list-icon-text vm">{{item.tel}}</view>
+                    <view class="list-icon-text vm">{{item.verify_phone}}</view>
                 </view>
-               <van-button round plain type="info" size="small" style="padding-left:280px">帮他验证</van-button>
+               <van-button round plain type="info" size="small" style="padding-left:280px" bindtap="verify" data-id="{{item.id}}">帮他验证</van-button>
             </view>
         </view>
+
+        <mp-dialog title="寻找校友(*^_^*)" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+            <image style="width: 160px; height: 125px;"  src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/ac2.jpg?sign=87f77a0b2856859eaf2d43a5855b6e70&t=1593260671"></image>
+        </mp-dialog>
+    
         <view style='display:flex; justify-content:center; align-items:center;padding:10rpx'>
             <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/news2-1.jpg?sign=f92e095a71b7a85c1a264e2ecf51c762&t=1590888107" show-menu-by-longpress='true' mode='aspectFit' ></image>
         </view>
+
     </view>
  </view>

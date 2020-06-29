@@ -1,3 +1,4 @@
 {
-  "usingComponents": {"van-button": "@vant/weapp/button/index"}
+  "usingComponents": {"van-button": "@vant/weapp/button/index",
+    "mp-dialog": "/miniprogram_npm/weui-miniprogram/dialog/dialog"}
 }

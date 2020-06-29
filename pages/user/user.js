@@ -19,6 +19,8 @@ Page({
     textareaAValue: '',
     textareaBValue: '',
     StartTimeshow: false,
+    usercode:[],
+    usercode1:[],
  
     minDate: new Date().getTime(),
     currentDate: new Date().getTime()
@@ -111,7 +113,7 @@ Page({
       textareaBValue: e.detail.value
     })
   },
-
+  //gotoUser: function(){ wx.navigateTo({ url: '/pages/user/user' }) },
  //提交活动信息表单到数据库
   SubmitActivity(res){
     console.log(res)
@@ -179,21 +181,22 @@ Page({
       }, 2000)
 
     } else {
-
+      //console.log(this.data.usercode)
       wx.request({
         //var adds = res.detail.value;
-        url: '',
+        url: 'https://api.mgiant.cn:8080/user/binding', 
+        data: {
+          code: this.data.usercode,
+          name : res.detail.value.name,
+          phone : res.detail.value.tel
+        }, 
+        method: "POST",
         header: {
           "Content-Type": "application/x-www-form-urlencoded"
         },
-
-        method: "POST",
-        //data: adds,
-        data: {},
-
         success: function (res) {
-          console.log(res.data);
-          if (res.data.status == 0) {
+          console.log(res);
+          if (res.data.status != 200) {
             wx.showToast({
               title: '提交失败！！！',
               icon: 'loading',
@@ -210,6 +213,37 @@ Page({
         }
       })
 
+      wx.login({
+        success: res1 => {
+          // 获取到用户的 code 之后：res.code
+          console.log("（完善信息第二次提交的）用户的code:" + res1.code);
+          this.setData({
+            usercode1: res1.code
+          });
+           wx.request({
+            url: 'https://api.mgiant.cn:8080/verify/record',
+            data:JSON.stringify({
+              openid:res1.code,
+             // StudentID : res.detail.value.StudentID,
+              verify_department : res.detail.value.faculty,
+              verify_classno : res.detail.value.classname,
+              verify_instructor : res.detail.value.tutor,
+              verify_scholar : this.data.picker[this.data.education],
+              verify_campus :  this.data.Schoolpicker[this.data.SchoolLocation],
+              verify_startyear : res.detail.value.EnrollmentTime,
+              verify_endyear : res.detail.value.GraduationTime,
+            }),
+            method:"post",//请求方式post/get
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            success: function (res) {
+              console.log(res);
+            }
+          })
+        }
+      })
+     
     }
 
     var name = res.detail.value.name
@@ -222,8 +256,50 @@ Page({
     var SchoolLocation =  this.data.Schoolpicker[this.data.SchoolLocation]
     var EnrollmentTime = res.detail.value.EnrollmentTime
     var GraduationTime = res.detail.value.GraduationTime
+    var code =  this.data.usercode
   
-    console.log(name,tel,StudentID,faculty,classname,education,SchoolLocation,EnrollmentTime,GraduationTime,tutor)
+    console.log(code,name,tel,StudentID,faculty,classname,education,SchoolLocation,EnrollmentTime,GraduationTime,tutor)
+  },
+
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function() {
+    var that = this;
+    // 查看是否授权
+    wx.getSetting({
+      success: function(res) {
+        if (res.authSetting['scope.userInfo']) {
+          wx.getUserInfo({
+            success: function(res) {
+              app.globalData.userInfo = res.userInfo
+              that.setData({
+                userInfo: res.userInfo,
+              })
+              // 用户已经授权过,不需要显示授权页面,所以不需要改变 isHide 的值
+              // 根据自己的需求有其他操作再补充
+              // 我这里实现的是在用户授权成功后，调用微信的 wx.login 接口，从而获取code
+              wx.login({
+                success: res => {
+                  // 获取到用户的 code 之后：res.code
+
+                  console.log("用户完善信息的code:" + res.code);
+                  that.setData({
+                    usercode: res.code
+                  });
+                }
+              });
+            }
+          });
+        } else {
+          // 用户没有授权
+          // 改变 isHide 的值，显示授权页面
+          that.setData({
+            isHide: true
+          });
+        }
+      }
+    });
   },
 
 })

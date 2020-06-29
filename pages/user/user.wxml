@@ -69,7 +69,7 @@
     </view>
 
     <view class="button-sp-area" style="display: flex;flex-direction: row;justify-content:center; width:500rpx; text-align: center;padding:10rpx;">
-          <button type="primary" bindtap="" form-type="submit">提交信息</button>
+          <button type="primary" bindtap="gotoUser" form-type="submit">提交信息</button>
     </view>
 
   </form>

@@ -8,6 +8,8 @@ Page({
    */
   data: {
     userInfo: {},
+    usercode:[],
+   
     //判断小程序的API，回调，参数，组件等是否在当前版本可用。
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     isHide: false,
@@ -41,16 +43,10 @@ Page({
               wx.login({
                 success: res => {
                   // 获取到用户的 code 之后：res.code
-                  // console.log("用户的code:" + res.code);
-                  // 可以传给后台，再经过解析获取用户的 openid
-                  // 或者可以直接使用微信的提供的接口直接获取 openid ，方法如下：
-                  wx.request({
-                      // 自行补上自己的 APPID 和 SECRET
-                      url: 'https://api.weixin.qq.com/sns/jscode2session?appid=wxa6506cc79549d1e0&secret=d1e810c01c98fd34b9deb006517ce7ca&js_code=' + res.code + '&grant_type=authorization_code',
-                      success: res => {
-                          // 获取到用户的 openid
-                          console.log("用户的openid:" + res.data.openid);
-                      }
+
+                  console.log("用户的code:" + res.code);
+                  that.setData({
+                    usercode: res.code
                   });
                 }
               });
@@ -68,34 +64,58 @@ Page({
   },
 
   bindGetUserInfo: function(e) {
+    var that = this;
+    // wx.login({
+    //   success: res => {
+    //     // 获取到用户的 code 之后：res.code
+    //     console.log("111用户的code:" + res.code);
+    //     that.setData({
+    //       usercode: res.code
+    //     });
+    //   }
+    // })
+    
     if (e.detail.userInfo) {
       //用户按了允许授权按钮
       var that = this;
       // 获取到用户的信息了，打印到控制台上看下
       console.log("用户的信息如下：");
       console.log(e.detail.userInfo);
+      //console.log(e.detail.userInfo.nickName);
       //授权成功后,通过改变 isHide 的值，让实现页面显示出来，把授权页面隐藏起来
       that.setData({
         isHide: false,
         userInfo: e.detail.userInfo
       });
-     
-      wx.request({
-        url: 'https:/api.mgiant.cn:8080/user/login',
-        method:"get",//请求方式post/get
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        success: function (res) {
-          //将获取到的json数据，存在名字叫list的这个数组中
+      wx.login({
+        success: res => {
+          // 获取到用户的 code 之后：res.code
+          console.log("（用户点击授权后）用户的code:" + res.code);
           that.setData({
-            loginlist: res.data,
-            //res代表success函数的事件对，data是固定的，list是数组
+            usercode: res.code
+          });
+          wx.request({
+            url: 'https://api.mgiant.cn:8080/user/login',
+            data:{
+              code:res.code,
+              avataUrl:e.detail.userInfo.avatarUrl,
+              nickName:e.detail.userInfo.nickName,
+            },
+            method:"get",//请求方式post/get
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            success: function (res) {
+              //将获取到的json数据，存在名字叫list的这个数组中
+              that.setData({
+                loginlist: res.data,
+                //res代表success函数的事件对，data是固定的，list是数组
+              })
+              console.log(res);
+            }
           })
-          console.log(res);
         }
       })
-
     } else {
       //用户按了拒绝按钮
       wx.showModal({
