@@ -3,6 +3,7 @@
     <text bindtap='cancel'>取消</text>
     <text class='header-delive' bindtap='postData'>发表</text>
 </view>
+
 <view class='edit-main'>
     <textarea class='edit-text' placeholder='对母校的祝福...' placeholder-style='color:#888' bindinput="getInputValue"></textarea>
     <view class='edit-img'>
@@ -12,10 +13,12 @@
         <view class='iconfont icon-plus' catchtap='chooseImage'></view>
     </view>
 </view>
+
 <view class='edit-footer'>
     <view class='footer-row' bindtap='chooseLocation'>
         <text class='iconfont icon-zuobiaonormal'></text>
         <text>所在位置</text>
+        <input type="text" class="footer_right" placeholder=" 请选择地址" bindtap="chooseLocation" value='{{chooseAddress}}'></input>
         <text class='iconfont icon-arrow-right'></text>
     </view>
 </view>

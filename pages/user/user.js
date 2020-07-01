@@ -199,7 +199,7 @@ Page({
           console.log(res);
           if (res.statusCode != 200) {
             wx.showToast({
-              title: '提交失败！！！',
+              title: '信息已存在！',
               icon: 'loading',
               duration: 2000
             })

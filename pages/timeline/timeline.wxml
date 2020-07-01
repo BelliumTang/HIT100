@@ -1,4 +1,3 @@
-
 <view class="cu-timeline">
         <view class="cu-time">2020.06.07</view>
         <view class="cu-item cur cuIcon-noticefill">
@@ -6,12 +5,7 @@
             <text>06:07</text> 哈工大百年校庆
           </view>
         </view>
-        <view class="cu-item text-red cuIcon-attentionforbidfill">
-          <view class="content bg-red shadow-blur">
-            界面目前处于 测试 状态
-          </view>
-        </view>
-  
+        
         <view class="cu-item text-blue">
           <view class="bg-blue content">
             <text>100</text> 一世纪规格功夫，新百年世界一流
@@ -23,6 +17,21 @@
 </view>
 
 <view class="cu-timeline">
+    <view class="cu-time">2020.06.07</view>
+    <view class="cu-item">
+          <view class="content">
+            <view class="cu-capsule radius">
+              <view class="cu-tag bg-cyan">夜晚</view>
+              <view class="cu-tag line-cyan">20:00</view>
+            </view>
+            <view class="margin-top">工大百年校庆无人机表演
+                <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E6%97%A0%E4%BA%BA%E6%9C%BA.png?sign=bdc8091b700cd13972ddb8db0fdde940&t=1593607665"></image>
+            </view>
+          </view>
+      </view>
+</view>
+
+<view class="cu-timeline">
   <view class="cu-time">2020.5.17</view>
   <view class="cu-item">
     <view class="content">
@@ -30,9 +39,13 @@
         <view class="cu-tag bg-cyan">凌晨</view>
         <view class="cu-tag line-cyan">02:30</view>
       </view>
-      <view class="margin-top">大三下真好玩！ddl可多了！需要这种精神！</view>
+      <view class="margin-top">大三下ddl可多了！需要这种精神！</view>
     </view>
   </view>
+</view>
+
+<view class="cu-timeline">
+  <view class="cu-time">2020.2.29</view>
   <view class="cu-item text-blue">
     <view class="bg-blue shadow-blur content">
       <view class="cu-list menu-avatar radius">
@@ -50,11 +63,11 @@
         </view>
         <view class="cu-item">
           <view class="cu-avatar round lg" style="background-image:url(https://pic.downk.cc/item/5ece721dc2a9a83be5ecc638.jpg);">
-            <view class="cu-tag badge">99+</view>
+            <view class="cu-tag badge">520+</view>
           </view>
           <view class="content">
             <view class="text-blue">狗焕
-              <view class="cu-tag round orange sm">SVIP</view>
+              <view class="cu-tag round pink sm">SVIP</view>
             </view>
             <view class="text-gray text-sm">
               <text class="text"></text>请回答，1988</view>
@@ -69,3 +82,165 @@
   </view>
 </view>
 
+<view class="cu-timeline">
+    <view class="cu-time">2019.06.09</view>
+    <view class="cu-item">
+          <view class="content bg-cyan">
+           哇哦，较场尾！
+                <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/QQ%E5%9B%BE%E7%89%8720190701153308.jpg?sign=c5e72965a38700fe5d517c4b4e1010a8&t=1593609690"></image>
+          </view>
+      </view>
+</view>
+
+<view class="cu-timeline">
+  <view class="cu-time">2019.06.07</view>
+
+  <view class="cu-item text-orange">
+    <view class="bg-red shadow-blur content">
+      <view class="cu-list menu-avatar radius">
+        
+        <view class="cu-item cuIcon-attentionforbidfill">
+          <view class="cu-avatar round lg" style="background-image:url(https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/Annotation%202020-07-01%20201937.jpg?sign=cc400aae9230fc5033800a4985d0cdb0&t=1593606279);">
+            <view class="cu-tag badge">99+</view>
+          </view>
+          <view class="content">
+            <view class="text-red"> 周玉
+              <view class="cu-tag round red sm">SVIP</view>
+            </view>
+            <view class="text-gray text-sm">
+              <text class="text"></text>过程淘汰啊！！</view>
+          </view>
+          <view class="action">
+            <view class="text-grey text-xs">10:10</view>
+            <text class="cuIcon-notice_forbid_fill text-gray"></text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="cu-timeline">
+  <view class="cu-time">2018.12.13</view>
+  <view class="cu-item">
+    <view class="content bg-pink">
+     参观腾讯大厦
+       <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/TIM%E5%9B%BE%E7%89%8720200701204527.jpg?sign=7c8062bbdc196922bddc3c4f5b476ec9&t=1593609815"></image>
+     
+    </view>
+  </view>
+</view>
+
+<view class="cu-timeline">
+    <view class="cu-time">2018.09.03</view>
+    <view class="cu-item">
+          <view class="content">
+            <view class="cu-capsule radius">
+              <view class="cu-tag bg-cyan">下午</view>
+              <view class="cu-tag line-cyan">15:00</view>
+            </view>
+                <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/TIM%E5%9B%BE%E7%89%8720200701204534.jpg?sign=6b85bec3ee7c2b3e70bb410b913b5538&t=1593609946"></image>
+           
+          </view>
+      </view>
+</view>
+
+<view class="cu-timeline">
+        <view class="cu-time">2018.09.03</view>
+        <view class="cu-item cur text-blue cuIcon-noticefill">
+          <view class="content bg-green shadow-blur">
+            <text>08:08</text> 台风山竹
+          </view>
+        </view>
+</view>
+
+<view class="cu-timeline">
+    <view class="cu-time">2018.05.17</view>
+    <view class="cu-item">
+          <view class="content">
+            <view class="cu-capsule radius">
+              <view class="cu-tag bg-cyan">数据结构</view>
+              <view class="cu-tag line-cyan">张海军老师</view>
+            </view>
+            <view class="margin-top">名场面
+                <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/TIM%E5%9B%BE%E7%89%8720200701204553.jpg?sign=50a15eae701d9ffc18ac9c8616212069&t=1593609280"></image>
+            </view>
+          </view>
+      </view>
+</view>
+
+<view class="cu-timeline">
+        <view class="cu-time">2017.09.28</view>
+        <view class="cu-item text-red cuIcon-attentionforbidfill">
+          <view class="content bg-red shadow-blur">
+            迎新晚会
+             <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/TIM%E5%9B%BE%E7%89%8720200701204628.jpg?sign=888a0f11d4785ba7ab79d6a826cc8ac0&t=1593609487"></image>
+          </view>
+        </view>
+</view>
+
+<view class="cu-timeline">
+    <view class="cu-time">2017.09.02</view>
+    <view class="cu-item">
+          <view class="content bg-cyan">
+           2017级新生开学典礼
+                <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/TIM%E5%9B%BE%E7%89%8720200701204618.jpg?sign=5a208d6211d9a0ebcdda36e8e7303eda&t=1593609064"></image>
+          </view>
+      </view>
+</view>
+
+
+<view class="cu-timeline">
+        <view class="cu-time">2017.09.01</view>
+        <view class="cu-item cur cuIcon-noticefill">
+          <view class="content bg-green shadow-blur">
+            <text>第一堂高数课 见到了帅气的彪哥</text> 
+          </view>
+        </view>
+        <view class="cu-item text-red cuIcon-attentionforbidfill">
+          <view class="content shadow-blur">
+           <view class="cu-capsule radius">
+              <view class="cu-tag bg-cyan">new</view>
+              <view class="cu-tag line-cyan">C语言</view>
+            </view>
+              陈清财老师可爱的台湾口音
+          </view>
+        </view>
+</view>
+
+<view class="cu-timeline">
+    <view class="cu-time">2017.08.26</view>
+    <view class="cu-item">
+          <view class="content bg-blue">
+           军训结束啦！大学生活正式开启！
+                <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/TIM%E5%9B%BE%E7%89%8720200701204547.jpg?sign=64ed5db7c2773dff7c3b8550dca4938b&t=1593608630"></image>
+
+          </view>
+      </view>
+</view>
+
+<view class="cu-timeline">
+    <view class="cu-time">2017.08.19</view>
+    <view class="cu-item">
+          <view class="content">
+            <view class="cu-capsule radius">
+              <view class="cu-tag bg-cyan">早晨</view>
+              <view class="cu-tag line-cyan">08:00</view>
+            </view>
+            <view class="margin-top">军训来咯！
+                <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/TIM%E5%9B%BE%E7%89%8720200701204612.jpg?sign=eba20d951477973add5eec75b2142716&t=1593608311"></image>
+            </view>
+          </view>
+      </view>
+</view>
+
+<view class="cu-timeline">
+  <view class="cu-time">2017.8.17</view>
+  <view class="cu-item">
+    <view class="content bg-orange">
+     我的大学由此开启
+       <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/TIM%E5%9B%BE%E7%89%8720200701204604.jpg?sign=f39c6ab7167c920526913e0e5efe2030&t=1593608212"></image>
+     
+    </view>
+  </view>
+</view>

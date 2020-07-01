@@ -1,10 +1,8 @@
-var data = require('../../data/data.js');
-console.log(data);
 var order = ['red', 'yellow', 'blue', 'green', 'red']
 Page({
   data: {
     toView: 'red',
-    list: data.list,
+    list:[],
     scrollTop: 100
   },
   upper: function(e) {
@@ -42,7 +40,38 @@ Page({
     });
   },
   gotoCreate: function(){ wx.navigateTo({ url: '/pages/createActivity/createActivity' }) },
-  onload: function(options) {
-    console.log('options', options);
-  }
+ /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function() {
+    var that = this;
+      wx.login({
+        success: res1 => {
+          // 获取到用户的 code 之后：res.code
+          console.log("我参加活动的code:" + res1.code);
+          that.setData({
+            usercode: res1.code
+          });
+            wx.request({
+            url: 'https://api.mgiant.cn:8080/activity/activities',
+            data: {
+              code: res1.code,
+              type: 'join'
+            }, 
+            method:"get",//请求方式post/get
+
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            success: function (res) {
+              //将获取到的json数据，存在名字叫list的这个数组中
+              that.setData({
+                list: res.data,
+              })
+              console.log(res);
+            } 
+          })
+        }
+      });
+    },
 })

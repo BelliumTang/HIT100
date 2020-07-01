@@ -6,7 +6,7 @@ Page({
     scrollTop: 100,
     dialogShow: false,
     usercode:[],
-    buttons: [{text: '帮校友验证成功！'}]
+    buttons: [{text: '解除验证成功！'}]
   },
   upper: function(e) {
     console.log(e)
@@ -43,12 +43,12 @@ Page({
     wx.login({
       success: res1 => {
         // 获取到用户的 code 之后：res.code
-        console.log("验证校友时code:" + res1.code);
+        console.log("删除校友时code:" + res1.code);
         that.setData({
           usercode: res1.code
         });
         wx.request({
-          url: 'https://api.mgiant.cn:8080/verify/identify',
+          url: 'https://api.mgiant.cn:8080/verify/revoke',
           data:{
             code: res1.code,
             object_openid: e.currentTarget.dataset.openid, 
@@ -62,12 +62,12 @@ Page({
               wx.login({
                 success: res2 => {
                   // 获取到用户的 code 之后：res.code
-                  console.log("再次获取校友列表时code:" + res2.code);
+                  console.log("删除校友再次查看校友列表时code:" + res2.code);
                   that.setData({
                     usercode: res2.code
                   });
                   wx.request({
-                    url: 'https://api.mgiant.cn:8080/verify/alumni',
+                    url: 'https://api.mgiant.cn:8080/verify/friend',
                     data: {
                       code: res2.code,
                     }, 
@@ -115,12 +115,12 @@ Page({
       wx.login({
         success: res1 => {
           // 获取到用户的 code 之后：res.code
-          console.log("寻找校友的code:" + res1.code);
+          console.log("查看验证过的校友code:" + res1.code);
           that.setData({
             usercode: res1.code
           });
             wx.request({
-            url: 'https://api.mgiant.cn:8080/verify/alumni',
+            url: 'https://api.mgiant.cn:8080/verify/friend',
             data: {
               code: res1.code,
             }, 

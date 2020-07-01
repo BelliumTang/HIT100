@@ -135,6 +135,6 @@ button {
 }
 
 .line {
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
     opacity: 0.3;
   }

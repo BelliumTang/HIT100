@@ -51,6 +51,16 @@
     </view>
     <view class="line"></view>
 
+    <view class='item' bindtap="friend">
+      <image class='item-image' src='https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E5%A5%96%E7%AB%A0-%E8%8E%B7%E5%A5%96.png?sign=b1745bee7ab49ee79d1b4cbb3b9f1cc6&t=1593518028'></image>
+      <view class="item-text">我验证过的校友</view>
+      <view class="detail2">
+        <text>></text>
+      </view>
+    </view>
+    <view class="line"></view>
+
+
     <view class='item'>
       <image class='item-image' src='/images/set.png'></image>
       <view class="item-text">设置</view>

@@ -43,7 +43,6 @@ Page({
               wx.login({
                 success: res => {
                   // 获取到用户的 code 之后：res.code
-
                   console.log("用户的code:" + res.code);
                   that.setData({
                     usercode: res.code
@@ -151,6 +150,13 @@ Page({
     //console.log('用户信息完善');
     wx.navigateTo({
       url: '/pages/mycreate/mycreate'
+    });
+  },
+
+  friend: function(){
+    //console.log('用户信息完善');
+    wx.navigateTo({
+      url: '/pages/friend/friend'
     });
   },
 

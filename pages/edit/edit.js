@@ -1,12 +1,14 @@
 // pages/edit/edit.js
 const app = getApp();
+var util = require('../../utils/util.js');
 Page({
     /*** 页面的初始数据*/
     data: {
         textareaTxt:null,
         imgAdrr:null,
         imgURL:[],
-        location:null
+        location:null,
+        time:''
     },
     cancel(){
         wx.navigateBack({
@@ -15,7 +17,7 @@ Page({
     },
     getInputValue(e){
         this.setData({
-            textareaTxt: e.detail.value    
+            textareaTxt: e.detail.value,
         })
     },
     chooseImage(){
@@ -36,13 +38,6 @@ Page({
                          success:function(res){
                              self.data.imgURL.push(res.fileID)
                          },
-                         /*
-                         fail: function(res) {
-                            wx.showToast({
-                              icon: 'none',
-                              title: '上传失败',
-                            })
-                          },*/
                      })
                  }
             }
@@ -54,37 +49,23 @@ Page({
         wx.chooseLocation({
             success(res) {
                 self.setData({
-                    location: res.name
+                    location: res.name,
+                    chooseAddress: res.name
                 })
-
              }
         })
     },
+
     postData(){
         let self=this
+        var time=util.formatTime(new Date());
+        self.setData({
+            time: time,
+        })
         wx.navigateBack({
             delta:1
         })
-        const db=wx.cloud.database()
-        /*
-        const timeStamp=Date.parse(new Date());
-        for(let i=0; i<this.data.imgAdrr; i++){
-            wx.cloud.uploadFile({
-                cloudPath: timeStamp+this.data.imgAdrr[i].match(/\.[^.]+?$/)[0],
-                filePath: this.data.imgAdrr[i],
-                success:function(res){
-                        self.setData({
-                            imgURL: self.data.imgURL.push(res.fileID)
-                        })
-                },
-                fail: function(res) {
-                    wx.showToast({
-                      icon: 'none',
-                      title: '上传失败',
-                    })
-                  },
-            })
-        }*/
+        const db=wx.cloud.database();
         db.collection('blessingNews').add({
             //data字段表示需新增的JSON数据
             data:{
@@ -92,8 +73,10 @@ Page({
                 nickName: app.globalData.userInfo.nickName,
                 textareaTxt:this.data.textareaTxt,
                 location: this.data.location,
-                imgURL:this.data.imgURL
+                imgURL:this.data.imgURL,
+                time:this.data.time,
             },
         })
     }
+
 })

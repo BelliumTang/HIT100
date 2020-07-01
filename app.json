@@ -10,6 +10,7 @@
     "pages/news/news",
     "pages/light/light",
     "pages/timeline/timeline",
+    "pages/friend/friend",
     
     "pages/test/test",
     "pages/logs/logs",

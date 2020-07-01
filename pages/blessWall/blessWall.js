@@ -1,4 +1,5 @@
 // pages/firendsCirle/firendsCircle.js
+var util = require('../../utils/util.js');
 const app = getApp()  //获取小程序实例
 function getAllData(self){
     const db = wx.cloud.database()
@@ -36,6 +37,14 @@ Page({
             urls: imgURL // 需要预览的图片http链接列表
         })
     },
+    /*
+    getTime(e){
+        let self =this;
+        let time = util.getDateDiff(this.deliverData.time);
+        self.setData({
+            time: time,
+        })
+    },*/
 
   /**
    * 生命周期函数--监听页面加载

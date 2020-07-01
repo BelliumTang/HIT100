@@ -15,22 +15,19 @@
 
         <view class="list-box" wx:for="{{list}}">
             <view class="list-item">
-                <image class="list-avatar" src="{{item.avatar}}"></image>
-                <view class="list-name">{{item.name}}</view>
-                <view class="list-des">{{item.detail}}</view>
+                <image class="list-avatar" src="{{item.user_avataurl}}"></image>
+                <view class="list-name">{{item.user_name}}</view>
+                <view class="list-des">{{item.info}}</view>
                 <image class="list-image" wx:for="{{item.images}}" wx:for-item="src" src="{{src}}" show-menu-by-longpress='true' mode='aspectFit'></image>
                 <view class="list-time fz-10">
                     <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E6%97%B6%E9%97%B4.png?sign=16aff38d01e1f4f90bf81022fe439827&t=1591880696"></image>
-                    <view class="list-icon-text vm">{{item.time}}</view>
+                    <view class="list-icon-text vm">{{item.date+' '+item.time}}</view>
                 </view>
                 <view class="list-address fz-10">
                     <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E5%9C%B0%E7%82%B9.png?sign=82208a37a1aa3e7a1a9e43bd25354574&t=1591880536"></image>
-                    <view class="list-icon-text vm">{{item.address}}</view>
+                    <view class="list-icon-text vm">{{item.location}}</view>
                 </view>
-                <view class="list-address fz-10">
-                    <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E7%94%B5%E8%AF%9D.png?sign=3da750155f511b6854af8c0f1672fa8f&t=1591880568"></image>
-                    <view class="list-icon-text vm">{{item.tel}}</view>
-                </view>
+               
                <van-button round type="warning" size="small" style="padding-left:280px" bindtap="joinActivity" data-id="{{item.id}}">报名活动</van-button>
             </view>
         </view>
