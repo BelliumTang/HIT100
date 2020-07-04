@@ -180,7 +180,7 @@
 <view class="cu-timeline">
     <view class="cu-time">2017.09.02</view>
     <view class="cu-item">
-          <view class="content bg-cyan">
+          <view class="content bg-cyan light">
            2017级新生开学典礼
                 <image src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/TIM%E5%9B%BE%E7%89%8720200701204618.jpg?sign=5a208d6211d9a0ebcdda36e8e7303eda&t=1593609064"></image>
           </view>

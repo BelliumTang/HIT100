@@ -3,7 +3,8 @@ var util = require('../../utils/util.js');
 const app = getApp()  //获取小程序实例
 function getAllData(self){
     const db = wx.cloud.database()
-    db.collection('blessingNews').get({
+    const _ = db.command
+    db.collection('blessingNews').orderBy('time','desc').get({
         success:function(res){
             self.setData({
                 deliverData: res.data

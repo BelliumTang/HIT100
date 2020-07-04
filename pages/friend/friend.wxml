@@ -45,11 +45,7 @@
                     <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E6%97%B6%E9%97%B4%20(2).png?sign=699df9d3a51a5fd0e5932c91e2727f2e&t=1592205963"></image>
                     <view class="list-icon-text vm">毕业时间：{{item.verify_endyear}}</view>
                 </view>
-                  <view class="list-time fz-10">
-                    <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E7%AC%94%E8%AE%B0%E6%9C%AC.png?sign=3128647fd4dd7f675b4dced8357379b0&t=1593528511"></image>
-                    <view class="list-icon-text vm">专业：{{item.verify_major}}</view>
-                </view>
-
+                  
                 <view class="list-time fz-10">
                     <image class="list-icon vm" src="https://6869-hit100-g6bma-1302265912.tcb.qcloud.la/%E7%8F%AD%E7%BA%A7%E7%AE%A1%E7%90%86.png?sign=c360dd6d1f8722fe341b31a64ae886f4&t=1593528465"></image>
                     <view class="list-icon-text vm">班级：{{item.verify_classno}}</view>
